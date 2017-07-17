@@ -7,3 +7,10 @@ This project was undertaken to fulfill one of the two Capstone projects required
 The following project files are located in this project directory:
 
 [README.md](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/edit/master/README.md) -- This document, with project description.
+
+
+## Data Sources
+
+
+## Analysis Software
+All coding was done in Python and with publicly available libraries using Jupyter Notebook.
