@@ -1,7 +1,7 @@
 # Image-Recognition-with-Deep-Learning
 
 ## Project Summary
-This project was undertaken to fulfill one of the two Capstone projects required by [SpringBoard.com](https://springboard.com). It explores the use of transfer learning in a variety of image recognitions.
+This project was undertaken to fulfill one of the two Capstone projects required by [SpringBoard.com](https://springboard.com). It explores the use of transfer learning in recognizing a variety of images through the training and validating processes.
 
 ## Project Files
 The following project files are located in this project directory:
