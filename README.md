@@ -19,5 +19,5 @@ All coding was done in Python and with publicly available libraries using Jupyte
 
 
 
-## Acknowlegements
+## Acknowledgements
 Credit goes to my mentor, [Alex Chao](https://www.linkedin.com/in/alexchao56/) for his invaluable guidance and feedback on the progress of this project.
