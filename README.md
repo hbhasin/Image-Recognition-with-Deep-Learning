@@ -16,6 +16,8 @@ The following project files are located in this project directory:
 
 [Initial checkout with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_xception.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
 
+[Two Classes (Noodles) - Image Recognition with simple three layer Convolutional Neural Network](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_basic_convnet_model.ipynb) - Trains a simple three layer convolutional neural network to recognize fried noodles from noodle soup.
+
 [Two Classes (Noodles) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg16_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
 [Two Classes (Noodles) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg19_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
