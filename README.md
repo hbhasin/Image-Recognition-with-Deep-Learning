@@ -26,11 +26,11 @@ The following project files are located in this project directory:
 
 [Three Class (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg16_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
-[Three Class (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg19_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
+[Three Class (Leaves) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg19_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
-[Three Class (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_inception_v3_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
+[Three Class (Leaves) - Image Recognition with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_inception_v3_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
-[Three Class (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_xception_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
+[Three Class (Leaves) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_xception_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
 ## Data Sources
 
