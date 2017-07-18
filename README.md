@@ -8,7 +8,7 @@ The following project files are located in this project directory:
 
 [README.md](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/edit/master/README.md) -- This document, with project description.
 
-[Image Recognition with Deep Learning Capstone Project Proposal](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/Image%20Recognition%20Capstone%20Project%20Proposal.pdf) - Project Proposal.
+[Image Recognition with Deep Learning Capstone Project Proposal](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/Image%20Recognition%20with%20Deep%20Learning%20Capstone%20Project%20Proposal.pdf) - Project Proposal.
 
 [Initial checkout with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg16.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
 
