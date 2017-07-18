@@ -50,6 +50,12 @@ The following project files are located in this project directory:
 
 [Ten Classes (Butterflies) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_vgg16_model.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
+[Ten Classes (Butterflies) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_vgg19_model.ipynb) - Uses an ImageNet pre-trained VGG19 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
+
+[Ten Classes (Butterflies) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_inception_v3_model.ipynb) - Uses an ImageNet pre-trained Inception V3 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
+
+[Ten Classes (Butterflies) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_xception_model.ipynb) - Uses an ImageNet pre-trained Xception model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
+
 
 ## Data Sources
 
