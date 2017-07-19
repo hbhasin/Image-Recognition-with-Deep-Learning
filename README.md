@@ -56,7 +56,7 @@ The following project files are located in this project directory:
 
 [Ten Classes (Butterflies) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_vgg19_model.ipynb) - Uses an ImageNet pre-trained VGG19 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
-[Ten Classes (Butterflies) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_inception_v3_model.ipynb) - Uses an ImageNet pre-trained Inception V3 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
+[Ten Classes (Butterflies) - Image Recognition with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_inception_v3_model.ipynb) - Uses an ImageNet pre-trained Inception V3 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
 [Ten Classes (Butterflies) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_xception_model.ipynb) - Uses an ImageNet pre-trained Xception model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
@@ -72,9 +72,9 @@ The following project files are located in this project directory:
 
 [Dogs Data](https://github.com/openimages/dataset) - Open Images is a dataset of ~9 million URLs to images that have been annotated with labels spanning over 6000 categories. "Krasin I., Duerig T., Alldrin N., Veit A., Abu-El-Haija S., Belongie S., Cai D., Feng Z., Ferrari V., Gomes V., Gupta A., Narayanan D., Sun C., Chechik G, Murphy K. OpenImages: A public dataset for large-scale multi-label and multi-class image classification, 2016. Available from https://github.com/openimages".
 
-[Birds Data](http://www.vision.caltech.edu/visipedia-data/CUB-200/images.tgz) Welinder P., Branson S., Mita T., Wah C., Schroff F., Belongie S., Perona, P. “Caltech-UCSD Birds 200”. California Institute of Technology. CNS-TR-2010-001. 2010.
+[Birds Data](http://www.vision.caltech.edu/visipedia/CUB-200.html) Welinder P., Branson S., Mita T., Wah C., Schroff F., Belongie S., Perona, P. “Caltech-UCSD Birds 200”. California Institute of Technology. CNS-TR-2010-001. 2010.
 
-[Butterflies Data](http://www.comp.leeds.ac.uk/scs6jwks/dataset/leedsbutterfly/files/leedsbutterfly_dataset_v1.0.zip) Josiah Wang, Katja Markert, and Mark Everingham, Learning Models for Object Recognition from Natural Language Descriptions, In Proceedings of the 20th British Machine Vision Conference (BMVC2009)
+[Butterflies Data](http://www.comp.leeds.ac.uk/scs6jwks/dataset/leedsbutterfly/) Josiah Wang, Katja Markert, and Mark Everingham, Learning Models for Object Recognition from Natural Language Descriptions, In Proceedings of the 20th British Machine Vision Conference (BMVC2009)
 
 
 ## Analysis Software
