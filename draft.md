@@ -1,1 +1,2 @@
 
+(http://cs231n.github.io/assets/nn3/opt2.gif)
