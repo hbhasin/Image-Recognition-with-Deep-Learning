@@ -12,11 +12,11 @@ The following project files are located in this project directory:
 
 [Initial checkout with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg16.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Initial checkout with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg19.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg19.ipynb) - Uses a Keras ImageNet pre-trained VGG19 model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Initial checkout with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_inception_v3.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_inception_v3.ipynb) - Uses a Keras ImageNet pre-trained Inception V3 model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Initial checkout with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_xception.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_xception.ipynb) - Uses a Keras ImageNet pre-trained Xception model to recognize one random sample from each of the datasets and provide the top five results.
 
 [Two Classes (Noodles) - Image Recognition with simple three layer Convolutional Neural Network](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_basic_convnet_model.ipynb) - Trains a simple three layer convolutional neural network to recognize fried noodles from noodle soup.
 
