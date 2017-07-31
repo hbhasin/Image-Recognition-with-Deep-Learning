@@ -20,6 +20,8 @@ The following project files are located in this project directory:
 
 [Two Classes (Noodles) - Image Recognition with simple three layer Convolutional Neural Network](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_basic_convnet_model.ipynb) - Trains a simple three layer convolutional neural network to recognize fried noodles from noodle soup.
 
+[Two Classes (Noodles) - Data_Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_data_train_validate_test_split_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
+
 [Two Classes (Noodles) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
 [Two Classes (Noodles) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg19_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
@@ -27,6 +29,8 @@ The following project files are located in this project directory:
 [Two Classes (Noodles) - Image Recognition with pre-trained Inception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_inception_v3_model_V1.ipynb) - Uses an ImageNet pre-trained VGG19 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
 [Two Classes (Noodles) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Inception V3 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
+
+[Three Classes (Leaves) -  Data_Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_data_train_validate_test_split_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
 [Three Classes (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
@@ -36,6 +40,8 @@ The following project files are located in this project directory:
 
 [Three Classes (Leaves) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
+[Six Classes (Dogs) - Data Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_data_train_validate_test_split_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize six different types of dogs using Transfer Learning and Fine Tuning methods.
+
 [Six Classes (Dogs) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize six different types of dogs using Transfer Learning and Fine Tuning methods.
 
 [Six Classes (Dogs) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_with_pretrained_vgg19_model_V1.ipynb) - Uses an ImageNet pre-trained VGG19 model to recognize six different types of dogs using Transfer Learning and Fine Tuning methods.
@@ -44,6 +50,8 @@ The following project files are located in this project directory:
 
 [Six Classes (Dogs) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize six different types of dogs using Transfer Learning and Fine Tuning methods.
 
+[Ten Classes (Birds) - Data Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_data_train_validate_test_split_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
+
 [Ten Classes (Birds) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
 
 [Ten Classes (Birds) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_with_pretrained_vgg19_model_V1.ipynb) - Uses an ImageNet pre-trained VGG19 model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
@@ -51,6 +59,8 @@ The following project files are located in this project directory:
 [Ten Classes (Birds) - Image Recognition with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_with_pretrained_inception_v3_model_V1.ipynb) - Uses an ImageNet pre-trained Inception V3 model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
 
 [Ten Classes (Birds) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
+
+[Ten Classes (Butterflies) - Data Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_data_train_validate_test_split_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
 [Ten Classes (Butterflies) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
