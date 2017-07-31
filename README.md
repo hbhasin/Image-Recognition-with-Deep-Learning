@@ -24,15 +24,15 @@ The following project files are located in this project directory:
 
 [Two Classes (Noodles) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg16_model_V1.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
-[Two Classes (Noodles) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg19_model_V1.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
+[Two Classes (Noodles) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg19_model_V1.ipynb) - Uses a Keras ImageNet pre-trained VGG19 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
-[Two Classes (Noodles) - Image Recognition with pre-trained Inception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_inception_v3_model_V1.ipynb) - Uses a Keras ImageNet pre-trained VGG19 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
+[Two Classes (Noodles) - Image Recognition with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_inception_v3_model_V1.ipynb) - Uses a Keras ImageNet pre-trained Inception V3 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
-[Two Classes (Noodles) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_xception_model_V1.ipynb) - Uses a Keras ImageNet pre-trained Inception V3 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
+[Two Classes (Noodles) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_xception_model_V1.ipynb) - Uses a Keras ImageNet pre-trained Xception model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
 [Three Classes (Leaves) -  Dataset Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
-[Three Classes (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg16_model_V1.ipynb) - Uses a Keras ImageNet pre-trained Xception model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
+[Three Classes (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg16_model_V1.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
 [Three Classes (Leaves) - Image Recognition with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg19_model_V1.ipynb) - Uses a Keras ImageNet pre-trained VGG19 model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
