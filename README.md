@@ -20,7 +20,7 @@ The following project files are located in this project directory:
 
 [Two Classes (Noodles) - Image Recognition with simple three layer Convolutional Neural Network](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_basic_convnet_model.ipynb) - Trains a simple three layer convolutional neural network to recognize fried noodles from noodle soup.
 
-[Two Classes (Noodles) - Dataset Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset.
+[Two Classes (Noodles) - Dataset Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
 [Two Classes (Noodles) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
@@ -30,7 +30,7 @@ The following project files are located in this project directory:
 
 [Two Classes (Noodles) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Inception V3 model to recognize fried noodles from noodle soup using Transfer Learning and Fine Tuning methods.
 
-[Three Classes (Leaves) -  Dataset Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset.
+[Three Classes (Leaves) -  Dataset Train-Validate-Test_Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
 [Three Classes (Leaves) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
@@ -40,7 +40,7 @@ The following project files are located in this project directory:
 
 [Three Classes (Leaves) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/leaves_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize three different types of leaves using Transfer Learning and Fine Tuning methods.
 
-[Six Classes (Dogs) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset.
+[Six Classes (Dogs) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
 [Six Classes (Dogs) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize six different types of dogs using Transfer Learning and Fine Tuning methods.
 
@@ -50,7 +50,7 @@ The following project files are located in this project directory:
 
 [Six Classes (Dogs) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/dogs_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize six different types of dogs using Transfer Learning and Fine Tuning methods.
 
-[Ten Classes (Birds) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset.
+[Ten Classes (Birds) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
 [Ten Classes (Birds) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
 
@@ -60,7 +60,7 @@ The following project files are located in this project directory:
 
 [Ten Classes (Birds) - Image Recognition with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/birds_with_pretrained_xception_model_V1.ipynb) - Uses an ImageNet pre-trained Xception model to recognize ten different types of birds using Transfer Learning and Fine Tuning methods.
 
-[Ten Classes (Butterflies) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset.
+[Ten Classes (Butterflies) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
 [Ten Classes (Butterflies) - Image Recognition with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/butterflies_with_pretrained_vgg16_model_V1.ipynb) - Uses an ImageNet pre-trained VGG16 model to recognize ten different types of butterflies using Transfer Learning and Fine Tuning methods.
 
@@ -74,6 +74,7 @@ The following project files are located in this project directory:
 
 [./images](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/tree/master/images) - Folder containing images used in the Python notebooks.
 
+[./csv](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/tree/master/csv) - Folder containing csv files generated by the pandas library during the testing phase in the Python notebooks.
 
 ## Data Sources
 [Noodles Data](https://github.com/openimages/dataset) - Open Images is a dataset of ~9 million URLs to images that have been annotated with labels spanning over 6000 categories. "Krasin I., Duerig T., Alldrin N., Veit A., Abu-El-Haija S., Belongie S., Cai D., Feng Z., Ferrari V., Gomes V., Gupta A., Narayanan D., Sun C., Chechik G, Murphy K. OpenImages: A public dataset for large-scale multi-label and multi-class image classification, 2016. Available from https://github.com/openimages".
