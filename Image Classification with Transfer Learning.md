@@ -12,4 +12,4 @@ According to [Pan, et al](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%201.png)
 
-Figure 1: Different learning processes between traditional machine learning and Transfer Learning ([Pan, et al])(https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf)
+Figure 1: Different learning processes between traditional machine learning and Transfer Learning - [Pan, et al](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf)
