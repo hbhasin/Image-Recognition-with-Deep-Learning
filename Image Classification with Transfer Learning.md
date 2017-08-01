@@ -2,6 +2,8 @@
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG)
 
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" ></a>
+
 <img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" width="50">
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt2.gif)
