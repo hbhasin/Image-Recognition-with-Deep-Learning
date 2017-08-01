@@ -2,9 +2,9 @@
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG)
 
-![](http://cs231n.github.io/assets/nn3/opt1.gif)
+![]<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" width="50")
 
-![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif)
+<img src="https://github.com/favicon.ico" width="48">
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt2.gif)
 
