@@ -28,16 +28,20 @@ There are several libraries in use today that support deep learning. Each has it
 -  [Tensorflow](https://www.tensorflow.org/) – Uses data flow graphs for numerical computation.
 -  [Lasagne](https://github.com/Lasagne/Lasagne) – A lightweight library to build and train neural networks in Theano.
 -  [Caffe](http://caffe.berkeleyvision.org/) -  A deep learning framework made with expression, speed, and modularity in mind.
-•	Caffe2 – A new lightweight, modular, and scalable deep learning framework.
-•	Microsoft Cognitive Toolkit – Uses directed graphs for describing neural networks. Previously known as CNTK.
-•	PyTorch – Builds neural networks using a technique called reverse-mode auto-differentiation.
-•	Keras - Keras is a high-level neural networks API, written in Python and capable of running on top of Tensorflow, Microsoft Cognitive Toolkit, or Theano. It was developed with a focus on enabling fast experimentation.
-The Keras Deep Learning library for Python currently supports five models that have been pre-trained on ImageNet:
-•	VGG16 – A  convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper “Very Deep Convolutional Networks for Large-Scale Image Recognition”. 
-•	VGG19 – It is essentially the VGG16 model with three additional weight layers.
-•	Inception V3 - 
-•	
-•	ResNet50 – A residual learning framework that eases the training of deep networks. It reformulates the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions.
-•	Xception
+-  [Caffe2](https://caffe2.ai/) – A new lightweight, modular, and scalable deep learning framework.
+-  [Microsoft Cognitive Toolkit](https://www.microsoft.com/en-us/cognitive-toolkit/) – Uses directed graphs for describing neural networks. Previously known as CNTK.
+-  [PyTorch](http://pytorch.org/) – Builds neural networks using a technique called reverse-mode auto-differentiation.
+-  [Keras](http://keras.io/) - Keras is a high-level neural networks API, written in Python and capable of running on top of [Tensorflow](https://www.tensorflow.org/), [Microsoft Cognitive Toolkit](https://www.microsoft.com/en-us/cognitive-toolkit/), or [Theano](http://deeplearning.net/software/theano). It was developed with a focus on enabling fast experimentation.
+
+
+The [Keras](https://keras.io/applications/#usage-examples-for-image-classification-models) Deep Learning library for Python currently supports five models that have been pre-trained on ImageNet:
+-  [VGG16](https://arxiv.org/abs/1409.1556) – A  convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper “Very Deep Convolutional Networks for Large-Scale Image Recognition”. 
+-  VGG19 – It is essentially the VGG16 model with three additional weight layers.
+-  [Inception V3](https://arxiv.org/abs/1512.00567) - 
+
+-  [ResNet50](https://arxiv.org/abs/1512.03385) – A residual learning framework that eases the training of deep networks. It reformulates the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions.
+-  Xception
+
+
 This study will use the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
 
