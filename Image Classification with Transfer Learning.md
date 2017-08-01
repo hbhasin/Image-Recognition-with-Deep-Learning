@@ -49,6 +49,8 @@ This study will use the Keras library to explore ImageNet’s pre-trained VGG16,
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
 
+### Import Keras Libraries
+
 ```
 # import pertinent libraries
 import os
