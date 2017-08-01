@@ -9,7 +9,9 @@ According to [Pan, et al](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_
 
 <p align="center">
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Traditional%20vs.%20Transfer%20Learning.PNG" align="center" ></a> 
+</p>
 
+<p align="center">
 Figure 1: Different learning processes between traditional machine learning and Transfer Learning (Pan, et al)
 </p>
 
