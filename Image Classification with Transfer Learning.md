@@ -67,8 +67,8 @@ As a comparison, a simple one convolutional layer model was built to train and v
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
 
-Pre-trained VGG16 Model:
-Predicted:
+Pre-trained VGG16 Model Top 5 Results:
+
 Carbonara: 0.6117149
 
 Plate: 0.26870382
