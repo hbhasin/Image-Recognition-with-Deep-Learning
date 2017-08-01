@@ -70,10 +70,15 @@ As a comparison, a simple one convolutional layer model was built to train and v
 Pre-trained VGG16 Model:
 Predicted:
 Carbonara: 0.6117149
+
 Plate: 0.26870382
+
 Broccoli: 0.031503119
+
 Spaghetti_squash: 0.017119782
+
 Soup_bowl: 0.013476022
+
 
 Pre-trained VGG19 Model:
 
