@@ -23,6 +23,8 @@ A classic demonstration of Transfer Learning is in image classification using [K
 </p>
 
 <p align="center"> 
-Figure 2: [VGG16 Architecture](https://blog.heuritech.com/2016/02/29/a-brief-report-of-the-heuritech-deep-learning-meetup-5)
+Figure 2:
+</p>
+[VGG16 Architecture](https://blog.heuritech.com/2016/02/29/a-brief-report-of-the-heuritech-deep-learning-meetup-5)
 
 </p>
