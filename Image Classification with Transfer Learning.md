@@ -115,6 +115,20 @@ Guacamole: 0.030046616
 
 Broccoli: 0.017045854
 
+Prediction     | VGG16                           | VGG19
+               | (Fried Noodles) | (Noodle Soup) | (Fried Noodles) | (Noodle Soup)
+-------------- | --------------- | ------------- | --------------- | -------------
+Carbonara | 11,174
+16th & Broadway | 3,565
+1350 Larimer    | 10,837
+18th & California | 9,865
+1550 Glenarm | 9,441
+18th & Arapahoe | 8,531
+20th & Chestnut | 8,240
+13th & Speer | 8,228
+REI	 | 8,218
+16th & Little Raven | 8,198
+
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG"></a>
 
 
