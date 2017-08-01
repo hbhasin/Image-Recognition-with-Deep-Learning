@@ -61,9 +61,7 @@ The following steps were used in to train, validate and test the datasets in thi
 6. Evaluate Model
 7. Test Model
 
-As a comparison, a simple 
-
-
+As a comparison, a simple one convolutional layer model was built to train and validate the two-class (Fried Noodles and Noodle Soup) image classifier and check it against the pre-trained models on training time and accuracy.
 
 ## Code Details
 
