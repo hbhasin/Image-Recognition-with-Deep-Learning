@@ -2,7 +2,7 @@
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG)
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" align="left" height="300" width="300" ></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" align="left" height="400" width="400" ></a>
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt2.gif)
 
