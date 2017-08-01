@@ -50,13 +50,20 @@ Training Deep Learning networks require tremendous processing power to handle mu
 
 Howevere, no GPU was available for this project so the datasets were trained on two systems with Core i7 CPUs and on two systems with Core i5 CPUs.
 
-## Training and Validating Datasets Process
-1. Load Data
-2. Define Model
-3. Compile Model
-4. Fit Model
-5. Evaluate Model
-6. Test Model
+## Training, Validating and Testing Datasets Process
+The following steps were used in to train, validate and test the datasets in this project:
+
+1. Quick check Keras ImageNet pre-trained model's capability
+2. Load Data
+3. Define Model
+4. Compile Model
+5. Fit Model
+6. Evaluate Model
+7. Test Model
+
+As a comparison, a simple 
+
+
 
 ## Code Details
 
@@ -93,6 +100,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 %matplotlib inline
 ```
+
+### Datasets
+The datasets used in this project ranged from a simple two-class (Fried Noodles and Noodle Soup) image classification to a ten-class (Variety of butterflies) image classification.
+
+[Noodles Data](https://github.com/openimages/dataset) - Open Images is a dataset of ~9 million URLs to images that have been annotated with labels spanning over 6000 categories. "Krasin I., Duerig T., Alldrin N., Veit A., Abu-El-Haija S., Belongie S., Cai D., Feng Z., Ferrari V., Gomes V., Gupta A., Narayanan D., Sun C., Chechik G, Murphy K. OpenImages: A public dataset for large-scale multi-label and multi-class image classification, 2016. Available from https://github.com/openimages".
+
+[Leaves Data](http://www.vision.caltech.edu/Image_Datasets/leaves/leaves.tar) - Leaves dataset taken by Markus Weber. California Institute of Technology PhD student under Pietro Perona. 186 images of leaves against different backgrounds. Approximate scale normalisation. Jpeg format. Taken in and around Caltech. 896 x 592 jpg format.
+
+[Dogs Data](https://github.com/openimages/dataset) - Open Images is a dataset of ~9 million URLs to images that have been annotated with labels spanning over 6000 categories. "Krasin I., Duerig T., Alldrin N., Veit A., Abu-El-Haija S., Belongie S., Cai D., Feng Z., Ferrari V., Gomes V., Gupta A., Narayanan D., Sun C., Chechik G, Murphy K. OpenImages: A public dataset for large-scale multi-label and multi-class image classification, 2016. Available from https://github.com/openimages".
+
+[Birds Data](http://www.vision.caltech.edu/visipedia/CUB-200.html) Welinder P., Branson S., Mita T., Wah C., Schroff F., Belongie S., Perona, P. “Caltech-UCSD Birds 200”. California Institute of Technology. CNS-TR-2010-001. 2010.
+
+[Butterflies Data](http://www.comp.leeds.ac.uk/scs6jwks/dataset/leedsbutterfly/) Josiah Wang, Katja Markert, and Mark Everingham, Learning Models for Object Recognition from Natural Language Descriptions, In Proceedings of the 20th British Machine Vision Conference (BMVC2009)
 
 ### Load Training and Validation Datasets
 The training dataset is kept in the 'data/train' folder and the validation dataset in the 'data/validate' folder.
