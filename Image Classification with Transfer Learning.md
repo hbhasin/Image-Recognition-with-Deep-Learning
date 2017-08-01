@@ -63,6 +63,21 @@ The following steps were used in to train, validate and test the datasets in thi
 
 As a comparison, a simple one convolutional layer model was built to train and validate the two-class (Fried Noodles and Noodle Soup) image classifier and check it against the pre-trained models on training time and accuracy.
 
+## Quick Checkout on Keras ImageNet pre-trained Models
+
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
+
+Pre-trained VGG16 Model:
+Predicted:
+Carbonara: 0.6117149
+Plate: 0.26870382
+Broccoli: 0.031503119
+Spaghetti_squash: 0.017119782
+Soup_bowl: 0.013476022
+
+Pre-trained VGG19 Model:
+
+
 ## Code Details
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
