@@ -23,10 +23,11 @@ Figure 2:[VGG16 Architecture](https://blog.heuritech.com/2016/02/29/a-brief-repo
 Other applications that have benefited from Transfer Learning include [object detection](http://arxiv.org/abs/1311.2524), [zero-shot learning](http://arxiv.org/abs/1312.5650), [image captioning](http://googleresearch.blogspot.com/2014/11/a-picture-is-worth-thousand-coherent.html) and [video analysis](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6751448).
 
 There are several libraries in use today that support deep learning. Each has its own pros and cons. Some of the most commonly used ones for the Python Language are as follows:
-•	Theano - A Python library that allows one to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays.
-•	Tensorflow – Uses data flow graphs for numerical computation.
-•	Lasagne – A lightweight library to build and train neural networks in Theano.
-•	Caffe -  A deep learning framework made with expression, speed, and modularity in mind.
+
+-  [Theano](http://deeplearning.net/software/theano) - A Python library that allows one to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays.
+-  [Tensorflow](https://www.tensorflow.org/) – Uses data flow graphs for numerical computation.
+-  [Lasagne](https://github.com/Lasagne/Lasagne) – A lightweight library to build and train neural networks in Theano.
+-  [Caffe](http://caffe.berkeleyvision.org/) -  A deep learning framework made with expression, speed, and modularity in mind.
 •	Caffe2 – A new lightweight, modular, and scalable deep learning framework.
 •	Microsoft Cognitive Toolkit – Uses directed graphs for describing neural networks. Previously known as CNTK.
 •	PyTorch – Builds neural networks using a technique called reverse-mode auto-differentiation.
