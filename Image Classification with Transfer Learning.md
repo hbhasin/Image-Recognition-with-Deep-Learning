@@ -80,7 +80,9 @@ import matplotlib.pyplot as plt
 
 ### Load Training and Validation Datasets
 The training dataset is kept in the 'data/train' folder and the validation dataset in the 'data/validate' folder.
+
 Typical input image sizes are 224×224, 227×227, 256×256, and 299×299. VGG16, VGG19 accept 224×224 input images while Inception V3 and Xception require 299×299 pixel inputs.
+
 The number of epochs can range from as low as 5 to as high as 40,000 depeneding upon the dataset in question. 
 
 ```
