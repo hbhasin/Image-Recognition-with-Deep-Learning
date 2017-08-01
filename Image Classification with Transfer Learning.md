@@ -45,3 +45,21 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 
 This study will use the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
 
+import os
+import sys
+import datetime
+import glob as glob
+import numpy as np
+import cv2
+import keras
+from keras.applications.vgg16 import VGG16, preprocess_input
+from keras.models import Model
+from keras.layers import Dense, GlobalAveragePooling2D
+from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+from keras.optimizers import SGD
+import tensorflow
+from scipy.interpolate import spline
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+Using TensorFlow backend.
