@@ -8,7 +8,7 @@ According to [Pan, et al](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_
 
 
 ![](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%201.png)
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%201.png" align="center" height="400" width="600" ></a> 
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%201.png" align="center" height="400" width="500" ></a> 
 <p align="center">
-Figure 1: Different learning processes between traditional machine learning and Transfer Learning - ![Pan, et al(https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf)
+Figure 1: Different learning processes between traditional machine learning and Transfer Learning (Pan, et al)
 </p>
