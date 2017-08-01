@@ -50,6 +50,14 @@ Training Deep Learning networks require tremendous processing power to handle mu
 
 Howevere, no GPU was available for this project so the datasets were trained on two systems with Core i7 CPUs and on two systems with Core i5 CPUs.
 
+## Training and Validating Datasets Process
+1. Load Data
+2. Define Model
+3. Compile Model
+4. Fit Model
+5. Evaluate Model
+6. Test Model
+
 ## Code Details
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
@@ -112,4 +120,35 @@ nb_train_samples = 0
 for r, dirs, files in os.walk(train_dir):
     for dr in dirs:
         nb_train_samples += len(glob.glob(os.path.join(r, dr + "/*")))
+# get number of images in validation directory
+nb_validate_samples = 0
+for r, dirs, files in os.walk(validate_dir):
+    for dr in dirs:
+        nb_validate_samples += len(glob.glob(os.path.join(r, dr + "/*")))
+```
+### Preprocessing and augmenting the Datasets
+
+
+```
+# data pre-processing for training
+train_datagen =  ImageDataGenerator(
+    rescale = 1./255,
+    rotation_range = 20,
+    width_shift_range = 0.2,
+    height_shift_range = 0.2,
+    shear_range = 0.2,
+    zoom_range = 0.2,
+    fill_mode = 'nearest',
+    horizontal_flip = True)
+
+# data pre-processing for validation
+validate_datagen =  ImageDataGenerator(
+    rescale = 1./255,
+    rotation_range = 20,
+    width_shift_range = 0.2,
+    height_shift_range = 0.2,
+    shear_range = 0.2,
+    zoom_range = 0.2,
+    fill_mode = 'nearest',
+    horizontal_flip = True)
 ```
