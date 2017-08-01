@@ -18,7 +18,7 @@ A classic demonstration of Transfer Learning is in image classification using [K
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%202%20-%20VGG16%20Architecture.PNG"></a>
 
-Figure 2:[VGG16 Architecture](https://blog.heuritech.com/2016/02/29/a-brief-report-of-the-heuritech-deep-learning-meetup-5)
+Figure 2:[VGG16/VGG19 Architecture](https://blog.heuritech.com/2016/02/29/a-brief-report-of-the-heuritech-deep-learning-meetup-5)
 
 Other applications that have benefited from Transfer Learning include [object detection](http://arxiv.org/abs/1311.2524), [zero-shot learning](http://arxiv.org/abs/1312.5650), [image captioning](http://googleresearch.blogspot.com/2014/11/a-picture-is-worth-thousand-coherent.html) and [video analysis](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6751448).
 
@@ -45,14 +45,19 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 
 This study will use the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
 
+## Code Details
+
+The following code applies to all the Keras pre-trained models except as noted otherwise.
+
 ```
+# import pertinent libraries
 import os
 import sys
 import datetime
 import glob as glob
 import numpy as np
 import cv2
-import keras
+# import the Keras implementations of VGG16, VGG19, InceptionV3 and Xception models
 from keras.applications.vgg16 import VGG16, preprocess_input
 from keras.models import Model
 from keras.layers import Dense, GlobalAveragePooling2D
