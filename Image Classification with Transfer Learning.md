@@ -57,7 +57,9 @@ import datetime
 import glob as glob
 import numpy as np
 import cv2
+# [Keras Models]
 # import the Keras implementations of VGG16, VGG19, InceptionV3 and Xception models
+# the model used here is VGG16
 from keras.applications.vgg16 import VGG16, preprocess_input
 from keras.models import Model
 from keras.layers import Dense, GlobalAveragePooling2D
@@ -68,4 +70,23 @@ from scipy.interpolate import spline
 import pandas as pd
 import matplotlib.pyplot as plt
 %matplotlib inline
+```
+
+```
+# [Dataset]
+# image dimensions for VGG16, VGG19 are 224, 224
+# image dimensions for InceptionV3 and Xception are 299, 299
+img_width, img_height = 224, 224
+
+train_dir = 'data/train'
+validate_dir = 'data/validate'
+nb_epochs = 20
+batch_size = 32
+nb_classes = len(glob.glob(train_dir + '/*'))
+
+# get number of images in training directory
+nb_train_samples = 0
+for r, dirs, files in os.walk(train_dir):
+    for dr in dirs:
+        nb_train_samples += len(glob.glob(os.path.join(r, dr + "/*")))
 ```
