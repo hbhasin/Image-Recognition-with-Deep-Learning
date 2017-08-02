@@ -388,3 +388,24 @@ x = Dense(1024, activation='relu')(x)
 predictions = Dense(nb_classes, activation = 'softmax')(x)
 model = Model(input = incepV3_model.input, output = predictions)
 ```
+
+### Freeze the Layers of the Model
+Prior to compiling the model, all the layers of the pre-trained model were frozen. Only the Dense layer of the new model needed to be trained.
+
+```
+# freeze all layers of the pre-trained InceptionV3 model
+for layer in incepV3_model.layers:
+    layer.trainable = False
+```
+
+### Compile the Model
+
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt2.gif" align="left" height="320" width="400" ></a> <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" align="right" height="380" width="520" ></a>
+
+Animations that may help your intuitions about the learning process dynamics. Left: Contours of a loss surface and time evolution of different optimization algorithms. Notice the "overshooting" behavior of momentum-based methods, which make the optimization look like a ball rolling down the hill. Right: A visualization of a saddle point in the optimization landscape, where the curvature along different dimension has different signs (one dimension curves up and another down). Notice that SGD has a very hard time breaking symmetry and gets stuck on the top. Conversely, algorithms such as RMSprop will see very low gradients in the saddle direction. Due to the denominator term in the RMSprop update, this will increase the effective learning rate along this direction, helping RMSProp proceed. Images credit: [Alec Radford](https://twitter.com/alecrad). [Source: CS231n](http://cs231n.github.io/neural-networks-3/#ada)
+```
+# compile the new model using a RMSProp optimizer
+model.compile(optimizer = 'rmsprop',
+    loss = 'categorical_crossentropy',
+    metrics = ['accuracy'])
+```
