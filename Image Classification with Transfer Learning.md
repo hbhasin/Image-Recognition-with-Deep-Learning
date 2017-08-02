@@ -123,7 +123,7 @@ Border Collie | 0.35 | | | 0.5|
 Siberian Husky | | 0.69 | | | 0.65
 Bernese Mountain Dog | | | 0.98 | | | 0.93
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01%20-%20Initial%20Checkout.PNG"></a>
 
 Top Prediction | VGG16 - Common Yellowthroat | VGG16 - Winter Wren | VGG16 - Pine Warbler | VGG16 - Common Yellowthroat | VGG16 - Winter Wren | VGG16 - Pine Warbler
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
@@ -139,6 +139,8 @@ House Finch | | 0.22
 Brambling | | | 0.37 | | | 0.49
 Robin | | | | 0.53
 Water Ouzel | | | | | 0.4
+
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02%20-%20Initial%20Checkout.PNG"></a>
 
 Top Prediction | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
