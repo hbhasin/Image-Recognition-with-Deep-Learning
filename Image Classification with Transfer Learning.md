@@ -111,6 +111,20 @@ French Bull Dog | 0.42 | | | 0.15
 Staffordshire Bull Terrier | | 0.90 | | | 0.51
 Basset     | | | 0.96 | | | 0.94
 
+Top Prediction | VGG16 - Border Collie | VGG16 - Siberian Husky | VGG16 - Bernese Mountain Dog | VGG19 - Border Collie | VGG19 - Siberian Husky | VGG19 - Bernese Mountain Dog
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+French Bull Dog | 0.63
+Staffordshire Bull Terrier | | 0.97 | | | 0.93
+Walker Hound     | | | 0.47
+Bull Mastiff | | | | 0.37
+Basset | | | | | | 0.69
+
+Top Prediction | InceptionV3 - Border Collie | InceptionV3 - Siberian Husky | InceptionV3- Bernese Mountain Dog | Xception - Border Collie | Xception - Siberian Husky | Xception- Bernese Mountain Dog
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+French Bull Dog | 0.42 | | | 0.15
+Staffordshire Bull Terrier | | 0.90 | | | 0.51
+Basset     | | | 0.96 | | | 0.94
+
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
 
 
