@@ -95,10 +95,15 @@ Pot | | 0.19 | 0.1
 Head Cabbage | | | | | 0.1
 Packet | | | | | | 0.05
 
-
-
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
 
+Top Prediction | VGG16 - Bull Dog | VGG16 - Pit Bull | VGG16- Foxhound | VGG19 - Bull Dog | VGG19 - Pit Bull | VGG19 - Foxhound
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+French Bull Dog | 0.63
+Staffordshire Bull Terrier | | 0.97 | | 0.93
+Walker Hound     | | | 0.47
+Bull Mastiff | | | | 0.37
+Basset | | | | | | 0.69
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
 
