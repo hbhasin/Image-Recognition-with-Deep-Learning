@@ -184,14 +184,14 @@ Albatross | 0.68 | 0.82
 Top Prediction | VGG16 - Heliconius Erato | VGG16 - Heliconius Charitonius | VGG16 - Junonia Coenia | VGG19 - Heliconius Erato | VGG19 - Heliconius Charitonius | VGG19 - Junonia Coenia
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Admiral | 0.53 | | | 0.63
-Sulphur Butterfly | | 0.25 | | | 0.8
+Bee | | 0.25 | | | 0.23
 Ringlet | | | 0.97 | | | 0.98
 
 Top Prediction | InceptionV3 - Heliconius Erato | InceptionV3 - Heliconius Charitonius | InceptionV3 - Junonia Coenia | Xception - Heliconius Erato | Xception - Heliconius Charitonius | Xception - Junonia Coenia
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Admiral | 0.82 | | | 0.63
-Bee | | 0.25 | | 0.24
-Ringlet | | | 0.97 | | | 0.98
+Admiral | 0.82 | | | 0.81
+Sulphur Butterfly | | 0.8 | | 0.24
+Ringlet | | | 0.98 | |0.39 | 0.53
 
 ## Code Details
 
