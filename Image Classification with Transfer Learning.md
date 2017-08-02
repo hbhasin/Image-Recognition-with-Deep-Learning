@@ -57,7 +57,7 @@ The following steps were used in to train, validate and test the datasets in thi
 2. Load Data
 3. Define Model
 4. Compile Model
-5. Fit Model
+5. Fit (Train) Model
 6. Evaluate Model
 7. Test Model
 
@@ -408,10 +408,15 @@ Animations that may help your intuitions about the learning process dynamics. Le
 
 ### Compile the Model
 RMSProp with its default values was the optimizer used on all the datasets during the transfer learning phase. Keras recommends leaving the parameters at their default values:
+
 keras.optimizers.RMSprop(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
+
 lr: float >= 0. Learning rate.
+
 rho: float >= 0.
+
 epsilon: float >= 0. Fuzz factor.
+
 decay: float >= 0. Learning rate decay over each update.
 
 For the two class Noodles dataset, loss was defined as 'binary_crossentropy'. For all other datasets the loss was defined as 'categorical_crossentropy' which is a one-hot vector of the number of classes used in the classification.
@@ -423,7 +428,7 @@ model.compile(optimizer = 'rmsprop',
     metrics = ['accuracy'])
 ```
 
-### Fit the Model
+### Fit (Train) the Model
 
 ```
 # fit the model, log the results and the training time
