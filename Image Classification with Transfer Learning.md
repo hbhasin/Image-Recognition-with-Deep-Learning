@@ -78,9 +78,18 @@ Top Prediction | InceptionV3 - Fried Noodles | InceptionV3 - Noodle Soup | Xcept
 Carbonara | 0.81 | | 0.73
 Soup Bowl | | 0.75 | | 0.62
 
-
-
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG"></a>
+
+Top Prediction | VGG16 - Leaf 01 | VGG16 - Leaf 02 | VGG16- Leaf 03 | VGG19 - Leaf 01 | VGG19 - Leaf 02 | VGG19 - Leaf 03
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Carbonara | 0.61 | |
+Soup Bowl | | 0.51 | | 0.55
+Plate     | | |0.54 |
+
+Top Prediction | InceptionV3 - Fried Noodles | InceptionV3 - Noodle Soup | Xception- Fried Noodles | Xception - Noodle Soup
+-------------- | --------------- | ------------- | --------------- | -------------
+Carbonara | 0.81 | | 0.73
+Soup Bowl | | 0.75 | | 0.62
 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
