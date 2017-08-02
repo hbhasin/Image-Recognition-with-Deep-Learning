@@ -207,18 +207,25 @@ Lycaenid | | | | | | 0.31
 Admiral | | | 0.71 | | |
 Ringlet | | 0.46 | | | 0.55
 
-Top Prediction | VGG16 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta | VGG19 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta
+Top Prediction | VGG16 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta | VGG19 - Papilo Cresphontes | VGG19 - Pieris Rapae | VGG19 - Vanessa Atalanta
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 King Snake | 0.32
 Cabbage Butterfly | | 0.99 | | | 0.99
 Admiral | | | 0.99 | | | 0.99
 Black and Gold Garden Spider | | | | 0.36
 
-Top Prediction | InceptionV3 - Papilo Cresphontes | InceptionV3 - Pieris Rapae | InceptionV3 - Vanessa Atalanta | Xception - Papilo Cresphontes | InceptionV3 - Pieris Rapae | InceptionV3 - Vanessa Atalanta
+Top Prediction | InceptionV3 - Papilo Cresphontes | InceptionV3 - Pieris Rapae | Xception - Vanessa Atalanta | Xception - Papilo Cresphontes | Xception - Pieris Rapae | Xception - Vanessa Atalanta
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Admiral | 0.89 | | 0.95 | 0.33 | | 0.94
 Cabbage Butterfly | | 0.91 | | | 0.96
 
+Top Prediction | VGG16 - Vanessa Cardui | VGG19 - Vanessa Cardui
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Admiral | 0.66 | 0.63
+
+Top Prediction | InceptionV3 - Vanessa Cardui | Xception - Vanessa Cardui
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Monarch | 0.47 | 0.66
 
 ## Code Details
 
