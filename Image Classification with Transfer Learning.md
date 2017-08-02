@@ -481,3 +481,57 @@ print("Test Accuracy:", score[1])
 Test Score: 0.00213089538738
 Test Accuracy: 1.0
 ```
+### Save the model
+
+```
+# save transfer learning model for offline prediction purposes
+
+model.save('butterflies_inception_v3_model_tl.h5')
+```
+
+### Plot the test results
+```
+xfer_acc = transfer_learning_history.history['acc']
+val_acc = transfer_learning_history.history['val_acc']
+xfer_loss = transfer_learning_history.history['loss']
+val_loss = transfer_learning_history.history['val_loss']
+epochs = range(len(xfer_acc))
+
+x = np.array(epochs)
+y = np.array(xfer_acc)
+x_smooth = np.linspace(x.min(), x.max(), 500)
+y_smooth = spline(x, y, x_smooth)
+plt.plot(x_smooth, y_smooth, 'r-', label = 'Training')
+
+x1 = np.array(epochs)
+y1 = np.array(val_acc)
+x1_smooth = np.linspace(x1.min(), x1.max(), 500)
+y1_smooth = spline(x1, y1, x1_smooth)
+
+plt.plot(x1_smooth, y1_smooth, 'g-', label = 'Validation')
+plt.title('Transfer Learning - Training and Validation Accuracy')
+plt.legend(loc = 'lower left', fontsize = 9)
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.ylim(0,1.05)
+
+plt.figure()
+x = np.array(epochs)
+y = np.array(xfer_loss)
+x_smooth = np.linspace(x.min(), x.max(), 500)
+y_smooth = spline(x, y, x_smooth)
+plt.plot(x_smooth, y_smooth, 'r-', label = 'Training')
+
+x1 = np.array(epochs)
+y1 = np.array(val_loss)
+x1_smooth = np.linspace(x1.min(), x1.max(), 500)
+y1_smooth = spline(x1, y1, x1_smooth)
+
+plt.plot(x1_smooth, y1_smooth, 'g-', label = 'Validation')
+plt.title('Transfer Learning - Training and Validation Loss')
+plt.legend(loc = 'upper right', fontsize = 9)
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.ylim(0,max(y1))
+plt.show()
+```
