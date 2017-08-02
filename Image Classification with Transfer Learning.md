@@ -46,7 +46,7 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 This study will use the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
 
 ## Hardware Details
-Training Deep Learning networks require tremendous processing power to handle multiple matrix multiplications. GPUs are  ideal for performing these operations.  Facebook recently reported that its scientits were able to train nearly 1.3 million images in under one hour using [256 Tesla P100 GPUs](https://news.developer.nvidia.com/facebook-trains-imagenet-in-1-hour/) that previously took days on a single system. For the small datasets used in this project having a Titan GTX 1080 GPU would have been able to train 8X faster than an i7 Intel CPU running at 3.5GHz.
+Training Deep Learning networks require tremendous processing power to handle multiple matrix multiplications. GPUs are  ideal for performing these operations.  Facebook recently reported that its scientits were able to train nearly 1.3 million images in under one hour using [256 Tesla P100 GPUs](https://news.developer.nvidia.com/facebook-trains-imagenet-in-1-hour/) that previously took days on a single system. In 2012 the ImageNet ILSVRC model was trained on 1.2 million images over the period of 2–3 weeks across multiple GPUs. For the small datasets used in this project having a Titan GTX 1080 GPU would have been able to train 8X faster than an i7 Intel CPU running at 3.5GHz.
 
 However, no GPU was available for this project so the datasets were trained on two systems with Core i7 CPUs and on two systems with Core i5 CPUs.
 
@@ -333,7 +333,7 @@ The figure below displays the effect of applying rotation, width and height shif
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Image%20Augmentation.PNG"></a>
 
-The images used in the datasets underwent the following data augnentation when using VGG16 and VGG19 models. The InceptionV3 and Xception models have a built-in preprocessing function and do not need the rescaling feature.
+The images used in the datasets underwent the following data augmentation when using VGG16 and VGG19 models. The InceptionV3 and Xception models have a built-in preprocessing function and do not need the rescaling feature.
 
 ```
 # data pre-processing for training
@@ -374,7 +374,9 @@ validate_generator = validate_datagen.flow_from_directory(
     batch_size = batch_size)
 ```
 ### Define the Model
+Since ImageNet pre-trained models were used on the datasets in this project the model definition process was relatively simple. The top layer of the pre-trained model was removed and replaced with a new fully connected layer with a [Softmax](http://cs231n.github.io/linear-classify/#softmax) classifier. 
 
+GlobalAveragePooling2D progressively reduces the spatial size and the amount of parameters and computation in the network as well as control overfitting. The [Dense](https://keras.io/layers/core/#dense) layer is the densely-connected Neural Network layer of size 1024 with the [Rectified Linear Unit](http://cs231n.github.io/neural-networks-1/) (relu) as the activator.
 
 ```
 # set up transfer learning on pre-trained ImageNet InceptionV3 model - remove fully connected layer and replace
