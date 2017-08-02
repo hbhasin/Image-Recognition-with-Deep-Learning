@@ -142,11 +142,18 @@ Water Ouzel | | | | | 0.4
 
 Top Prediction | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-
+Hummingbird | 0.35
+Ruffed Grouse | | 0.27 | | 0.56
+Limpkin | | | 0.84 | | | | | 0.43
+Redshank | | | | 0.53
 
 Top Prediction | InceptionV3 - Sage Thrasher | InceptionV3 - Lincoln Sparrow | InceptionV3 - Brown Pelican | Xception - Sage Thrasher | Xception - Lincoln Sparrow | Xception - Brown Pelican
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-
+Bulbul | 0.29
+Bittern | | 0.31 | | 0.56
+Pelican | | | 0.64 | | | | | 0.56
+Humminbird | | | | 0.29
+Ruffed Grouse | | | | | 0.22
 
 ## Code Details
 
