@@ -75,11 +75,9 @@ Plate     | | |0.54 |
 
 Top Prediction | InceptionV3 - Fried Noodles | InceptionV3 - Noodle Soup | Xception- Fried Noodles | Xception - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
-1550 Glenarm | 9,441
-18th & Arapahoe | 8,531
-20th & Chestnut | 8,240
-13th & Speer | 8,228
-REI	 | 8,218
+Carbonara | 0.81 | | 0.73
+Soup Bowl | | 0.75 | | 0.62
+
 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG"></a>
