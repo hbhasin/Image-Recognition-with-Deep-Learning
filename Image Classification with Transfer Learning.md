@@ -66,7 +66,7 @@ As a comparison, a simple one convolutional layer model was built to train and v
 ## Quick Checkout on Keras ImageNet pre-trained Models
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
-
+<span style="color: #f2cf4a; font-family: Babas; font-size: 2em;">
 Top Prediction | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
 Carbonara | 0.61 | |
@@ -94,7 +94,7 @@ Computer Keyboard | 0.81 | | | 0.73
 Pot | | 0.19 | 0.1
 Head Cabbage | | | | | 0.1
 Packet | | | | | | 0.05
-
+</span>
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
 
 Top Prediction | VGG16 - Bull Dog | VGG16 - Pit Bull | VGG16- Foxhound | VGG19 - Bull Dog | VGG19 - Pit Bull | VGG19 - Foxhound
