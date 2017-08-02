@@ -181,21 +181,17 @@ Albatross | 0.68 | 0.82
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies%20-%20Initial%20Checkout.PNG"></a>
 
-Top Prediction | VGG16 - Green Jay | VGG16 - Eared Grebe | VGG16 - Pelagic Cormorant | VGG19 - Green Jay | VGG19 - Eared Grebe | VGG19 - Pelagic Cormorant
+Top Prediction | VGG16 - Heliconius Erato | VGG16 - Heliconius Charitonius | VGG16 - Junonia Coenia | VGG19 - Heliconius Erato | VGG19 - Heliconius Charitonius | VGG19 - Junonia Coenia
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Toucan | 0.81
-American Coot | | 0.74 | | 0.35
-Black Stork | | | 0.18
-Goldfinch | | | | 0.73
-Red-breasted Merganser | | | 0.4
-Water Ouzel | | | | | | 0.33
+Admiral | 0.53 | | | 0.63
+Sulphur Butterfly | | 0.25 | | | 0.8
+Ringlet | | | 0.97 | | | 0.98
 
-Top Prediction | InceptionV3 - Green Jay | InceptionV3 - Eared Grebe | InceptionV3 - Pelagic Cormorant | Xception - Green Jay | Xception - Eared Grebe | Xception - Pelagic Cormorant
+Top Prediction | InceptionV3 - Heliconius Erato | InceptionV3 - Heliconius Charitonius | InceptionV3 - Junonia Coenia | Xception - Heliconius Erato | Xception - Heliconius Charitonius | Xception - Junonia Coenia
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Jay | 0.19 | | | 0.33
-European Gallinule | | 0.35
-American Coot | | | 0.35 | | 0.12
-Black Grouse | | | | | | 0.26
+Admiral | 0.82 | | | 0.63
+Bee | | 0.25 | | 0.24
+Ringlet | | | 0.97 | | | 0.98
 
 ## Code Details
 
