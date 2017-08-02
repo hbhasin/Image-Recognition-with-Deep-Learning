@@ -83,7 +83,7 @@ Soup Bowl | | 0.75 | | 0.62
 Top Prediction | VGG16 - Leaf 01 | VGG16 - Leaf 02 | VGG16- Leaf 03 | VGG19 - Leaf 01 | VGG19 - Leaf 02 | VGG19 - Leaf 03
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Crossword Puzzle | 0.61 | |
-Lacewing | | 0.24 | | 0.30
+Lacewing | | 0.24 | | | 0.30
 Tray     | | | 0.23 |
 Picket Fence | | | | 0.09 | | |
 Envelope | | | | | | 0.096
