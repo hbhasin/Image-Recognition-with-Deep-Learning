@@ -166,7 +166,7 @@ Water Ouzel | | | | | | 0.33
 
 Top Prediction | InceptionV3 - Green Jay | InceptionV3 - Eared Grebe | InceptionV3 - Pelagic Cormorant | Xception - Green Jay | Xception - Eared Grebe | Xception - Pelagic Cormorant
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Jay | 0.19 | | 0.33
+Jay | 0.19 | | | 0.33
 European Gallinule | | 0.35
 American Coot | | | 0.35 | | 0.12
 Black Grouse | | | | | | 0.26
