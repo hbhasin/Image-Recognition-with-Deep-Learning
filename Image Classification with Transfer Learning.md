@@ -109,8 +109,7 @@ Top Prediction | InceptionV3 - Bull Dog | InceptionV3 - Pit Bull | InceptionV3- 
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 French Bull Dog | 0.42 | | | 0.15
 Staffordshire Bull Terrier | | 0.90 | | | 0.51
-Walker Hound     | | | | | | 0.94
-Basset | | | 0.96 | | |
+Basset     | | | | | | 0.94
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
 
