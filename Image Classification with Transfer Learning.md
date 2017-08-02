@@ -205,7 +205,7 @@ Top Prediction | InceptionV3 - Danaus Plexippus | InceptionV3 - Lycaena Phlaeas 
 Monarch | 0.96 | | | 0.92
 Lycaenid | | | | | | 0.31
 Admiral | | | 0.71 | | |
-Ringlet | 0.46 | | | | 0.55
+Ringlet | | 0.46 | | | 0.55
 
 ## Code Details
 
