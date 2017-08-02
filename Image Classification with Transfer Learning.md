@@ -238,9 +238,9 @@ The following code applies to all the Keras pre-trained models except as noted o
 ### Import Keras Libraries
 Keras supports VGG16, VGG19, ResNet50, InceptionV3 and Xception models that have been pre-trained on ImageNet. 
 
-The Dense layer is densely-connected Neural Network layer and the GlobalAveragePooling2D layer provides an average pooling for spatial data. 
+The Dense layer is the densely-connected Neural Network layer and the GlobalAveragePooling2D layer provides an average pooling for spatial data. 
 
-Keras has support for several optimizers that include SGD (Stochastic Gradient Descent), RMSprop, Adagrad, Adadelta, Adam, Adamax, Nadam and TFOptimizer (for Tensorflow). 
+Keras has support for several optimizers that include SGD (Stochastic Gradient Descent), [RMSprop](https://keras.io/optimizers/), [Adagrad](https://keras.io/optimizers/), [Adadelta](https://keras.io/optimizers/), [Adam](https://keras.io/optimizers/), [Adamax](https://keras.io/optimizers/), [Nadam](https://keras.io/optimizers/) and [TFOptimizer](https://keras.io/optimizers/) (for Tensorflow). 
 
 The ImageDataGenerator module generates batches of tensor image data with real-time data augmentation to manage memory.
 
