@@ -443,8 +443,7 @@ transfer_learning_history = model.fit_generator(
     nb_val_samples = nb_validate_samples,
     class_weight='auto')
 print('Training time: %s' % (now() - t))
-```
-* * *
+
 Epoch 1/20
 592/592 [==============================] - 310s - loss: 0.4048 - acc: 0.8733 - val_loss: 0.5311 - val_acc: 0.8284
 Epoch 2/20
@@ -469,7 +468,7 @@ Epoch 19/20
 Epoch 20/20
 592/592 [==============================] - 300s - loss: 0.0073 - acc: 0.9966 - val_loss: 0.1116 - val_acc: 0.9763
 Training time: 1:40:11.615244
-* * *
+```
 
 
 ### Evaluate the Model
