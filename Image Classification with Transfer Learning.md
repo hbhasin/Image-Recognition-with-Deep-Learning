@@ -171,6 +171,13 @@ European Gallinule | | 0.35
 American Coot | | | 0.35 | | 0.12
 Black Grouse | | | | | | 0.26
 
+Top Prediction | VGG16 - Black-footed Albatross | VGG19 - Black-footed Albatross
+-------------- | --------------- | ------------- 
+Albatross | 0.99 | 0.98
+
+Top Prediction | InceptionV3 - Black-footed Albatross | Xception - Black-footed Albatross
+-------------- | --------------- | ------------- 
+Albatross | 0.68 | 0.82
 
 ## Code Details
 
