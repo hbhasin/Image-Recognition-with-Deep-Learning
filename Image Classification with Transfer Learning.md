@@ -151,7 +151,7 @@ Top Prediction | InceptionV3 - Sage Thrasher | InceptionV3 - Lincoln Sparrow | I
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Bulbul | 0.29
 Bittern | | 0.31 | | 0.56
-Pelican | | | 0.64 | | | | | 0.56
+Pelican | | | 0.64 | | | 0.56
 Humminbird | | | | 0.29
 Ruffed Grouse | | | | | 0.22
 
