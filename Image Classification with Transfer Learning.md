@@ -90,7 +90,7 @@ Envelope | | | | | | 0.096
 
 Top Prediction | InceptionV3 - Leaf 01 | InceptionV3 - Leaf 02 | InceptionV3- Leaf 03 | Xception - Leaf 01 | Xception - Leaf 02 | Xception - Leaf 03
 -------------- | --------------- | ------------- | --------------- | ------------- | ----- | ----- |
-Computer Keyboard | 0.81 | | 0.73
+Computer Keyboard | 0.81 | | | 0.73
 Pot | | 0.19 | 0.1
 Head Cabbage | | | | | 0.1
 Packet | | | | | | 0.05
