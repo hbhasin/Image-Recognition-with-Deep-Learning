@@ -358,3 +358,18 @@ validate_datagen =  ImageDataGenerator(
     fill_mode = 'nearest',
     horizontal_flip = True)
 ```
+The train_datagen.flow and validate_datagen.flow methods read the images found in the subfolders of the the 'data/train' and 'data/validate' folders and generate batches of augmented image data for use in the training and validating process. Batch size used is 32 for all datasets unless otherwise specified.
+
+```
+# generate and store training data
+train_generator = train_datagen.flow_from_directory(
+    train_dir,
+    target_size = (img_width, img_height),
+    batch_size = batch_size)
+
+# generate and store validation data
+validate_generator = validate_datagen.flow_from_directory(
+    validate_dir,
+    target_size = (img_width, img_height),
+    batch_size = batch_size)
+```
