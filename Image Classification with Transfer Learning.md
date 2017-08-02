@@ -179,6 +179,24 @@ Top Prediction | InceptionV3 - Black-footed Albatross | Xception - Black-footed 
 -------------- | --------------- | ------------- 
 Albatross | 0.68 | 0.82
 
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies%20-%20Initial%20Checkout.PNG"></a>
+
+Top Prediction | VGG16 - Green Jay | VGG16 - Eared Grebe | VGG16 - Pelagic Cormorant | VGG19 - Green Jay | VGG19 - Eared Grebe | VGG19 - Pelagic Cormorant
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Toucan | 0.81
+American Coot | | 0.74 | | 0.35
+Black Stork | | | 0.18
+Goldfinch | | | | 0.73
+Red-breasted Merganser | | | 0.4
+Water Ouzel | | | | | | 0.33
+
+Top Prediction | InceptionV3 - Green Jay | InceptionV3 - Eared Grebe | InceptionV3 - Pelagic Cormorant | Xception - Green Jay | Xception - Eared Grebe | Xception - Pelagic Cormorant
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Jay | 0.19 | | | 0.33
+European Gallinule | | 0.35
+American Coot | | | 0.35 | | 0.12
+Black Grouse | | | | | | 0.26
+
 ## Code Details
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
