@@ -140,6 +140,14 @@ Brambling | | | 0.37 | | | 0.49
 Robin | | | | 0.53
 Water Ouzel | | | | | 0.4
 
+Top Prediction | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+
+
+Top Prediction | InceptionV3 - Sage Thrasher | InceptionV3 - Lincoln Sparrow | InceptionV3 - Brown Pelican | Xception - Sage Thrasher | Xception - Lincoln Sparrow | Xception - Brown Pelican
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+
+
 ## Code Details
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
