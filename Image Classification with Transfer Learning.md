@@ -179,7 +179,7 @@ Top Prediction | InceptionV3 - Black-footed Albatross | Xception - Black-footed 
 -------------- | --------------- | ------------- 
 Albatross | 0.68 | 0.82
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies%20-%20Initial%20Checkout.PNG"></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01%20-%20Initial%20Checkout.PNG"></a>
 
 Top Prediction | VGG16 - Heliconius Erato | VGG16 - Heliconius Charitonius | VGG16 - Junonia Coenia | VGG19 - Heliconius Erato | VGG19 - Heliconius Charitonius | VGG19 - Junonia Coenia
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
@@ -206,6 +206,8 @@ Monarch | 0.96 | | | 0.92
 Lycaenid | | | | | | 0.31
 Admiral | | | 0.71 | | |
 Ringlet | | 0.46 | | | 0.55
+
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02%20-%20Initial%20Checkout.PNG"></a>
 
 Top Prediction | VGG16 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta | VGG19 - Papilo Cresphontes | VGG19 - Pieris Rapae | VGG19 - Vanessa Atalanta
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
