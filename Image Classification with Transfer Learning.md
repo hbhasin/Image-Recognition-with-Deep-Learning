@@ -207,6 +207,21 @@ Lycaenid | | | | | | 0.31
 Admiral | | | 0.71 | | |
 Ringlet | | 0.46 | | | 0.55
 
+Top Prediction | VGG16 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta | VGG19 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+King Snake | 0.32
+Cabbage Butterfly | | 0.99 | | | 0.99
+Admiral | | | 0.99 | | | 0.99
+Black and Gold Garden Spider | | | | 0.36
+
+Top Prediction | InceptionV3 - Papilo Cresphontes | InceptionV3 - Pieris Rapae | InceptionV3 - Vanessa Atalanta | Xception - Papilo Cresphontes | InceptionV3 - Pieris Rapae | InceptionV3 - Vanessa Atalanta
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Admiral | 0.89 | | 0.95 | | | 0.94
+Cabbage Butterfly | | 0.91 | | | 0.96
+Monarch | 0.96 | | | 0.92
+Lycaenid | | | | | | 0.31
+Ringlet | | 0.46 | | | 0.55
+
 ## Code Details
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
