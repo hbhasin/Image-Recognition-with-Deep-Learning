@@ -313,6 +313,11 @@ for r, dirs, files in os.walk(validate_dir):
         nb_validate_samples += len(glob.glob(os.path.join(r, dr + "/*")))
 ```
 ### Preprocessing and augmenting the Datasets
+Data preparation is almost always required when working with any data analysis, machine learning, neural networkk or deep learning models. It becomes even more important to augment data in the case of image recognition. Keras provides the [ImageDataGenerator](https://keras.io/preprocessing/image/) class that defines the configuration for image data preparation and augmentation. 
+
+The figure below displays the effect of applying rotation, width and height shifts, shear, zoom , fill mode and horizontal flip on a random butterfly image:
+
+
 
 
 ```
