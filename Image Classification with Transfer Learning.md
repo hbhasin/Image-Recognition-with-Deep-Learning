@@ -419,7 +419,7 @@ epsilon: float >= 0. Fuzz factor.
 
 decay: float >= 0. Learning rate decay over each update.
 
-For the two class Noodles dataset, loss was defined as 'binary_crossentropy'. For all other datasets the loss was defined as 'categorical_crossentropy' which is a one-hot vector of the number of classes used in the classification.
+For the two class Noodles dataset, loss was defined as 'binary_crossentropy'. For all other datasets the loss was defined as 'categorical_crossentropy' which is a one-hot vector of the number of classes used in the classification. The metrics argument provided the classification accuracy.
 
 ```
 # compile the new model using a RMSProp optimizer
@@ -429,6 +429,7 @@ model.compile(optimizer = 'rmsprop',
 ```
 
 ### Fit (Train) the Model
+Since the datasets were trained and validated on systems with different CPUs and RAM, the training and validating times were collected and reported. Number of epochs was set to 20 for all datasets unless otherwise specified. All training and validation images were used for training and all validating, respectively.
 
 ```
 # fit the model, log the results and the training time
@@ -442,4 +443,33 @@ transfer_learning_history = model.fit_generator(
     nb_val_samples = nb_validate_samples,
     class_weight='auto')
 print('Training time: %s' % (now() - t))
+* * *
+Epoch 1/20
+592/592 [==============================] - 310s - loss: 0.4048 - acc: 0.8733 - val_loss: 0.5311 - val_acc: 0.8284
+Epoch 2/20
+592/592 [==============================] - 298s - loss: 0.0639 - acc: 0.9899 - val_loss: 0.2010 - val_acc: 0.9467
+Epoch 3/20
+592/592 [==============================] - 298s - loss: 0.0391 - acc: 0.9848 - val_loss: 0.1714 - val_acc: 0.9408
+Epoch 4/20
+592/592 [==============================] - 299s - loss: 0.0249 - acc: 0.9932 - val_loss: 0.1329 - val_acc: 0.9586
+Epoch 5/20
+592/592 [==============================] - 298s - loss: 0.0354 - acc: 0.9932 - val_loss: 0.1090 - val_acc: 0.9645
+.
+.
+.
+Epoch 16/20
+592/592 [==============================] - 301s - loss: 0.0084 - acc: 0.9966 - val_loss: 0.0331 - val_acc: 0.9822
+Epoch 17/20
+592/592 [==============================] - 300s - loss: 0.0035 - acc: 0.9983 - val_loss: 0.0570 - val_acc: 0.9882
+Epoch 18/20
+592/592 [==============================] - 301s - loss: 0.0168 - acc: 0.9966 - val_loss: 0.0620 - val_acc: 0.9822
+Epoch 19/20
+592/592 [==============================] - 299s - loss: 0.0280 - acc: 0.9932 - val_loss: 0.0724 - val_acc: 0.9822
+Epoch 20/20
+592/592 [==============================] - 300s - loss: 0.0073 - acc: 0.9966 - val_loss: 0.1116 - val_acc: 0.9763
+Training time: 1:40:11.615244
+* * *
 ```
+
+
+### Evaluate the Model
