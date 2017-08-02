@@ -100,7 +100,7 @@ Packet | | | | | | 0.05
 Top Prediction | VGG16 - Bull Dog | VGG16 - Pit Bull | VGG16- Foxhound | VGG19 - Bull Dog | VGG19 - Pit Bull | VGG19 - Foxhound
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 French Bull Dog | 0.63
-Staffordshire Bull Terrier | | 0.97 | | 0.93
+Staffordshire Bull Terrier | | 0.97 | | | 0.93
 Walker Hound     | | | 0.47
 Bull Mastiff | | | | 0.37
 Basset | | | | | | 0.69
