@@ -83,8 +83,10 @@ Soup Bowl | | 0.75 | | 0.62
 Top Prediction | VGG16 - Leaf 01 | VGG16 - Leaf 02 | VGG16- Leaf 03 | VGG19 - Leaf 01 | VGG19 - Leaf 02 | VGG19 - Leaf 03
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Crossword Puzzle | 0.61 | |
-Soup Bowl | | 0.51 | | 0.55
-Plate     | | |0.54 |
+Lacewing | | 0.24 | | 0.30
+Tray     | | | 0.23 |
+Picket Fence | | | | 0.09 | | |
+Envelope | | | | | | 0.096
 
 Top Prediction | InceptionV3 - Leaf 01 | InceptionV3 - Leaf 02 | InceptionV3- Leaf 03 | Xception - Leaf 01 | Xception - Leaf 02 | Xception - Leaf 03
 -------------- | --------------- | ------------- | --------------- | ------------- | ----- | ----- |
