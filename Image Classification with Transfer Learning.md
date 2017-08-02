@@ -472,3 +472,12 @@ Training time: 1:40:11.615244
 
 
 ### Evaluate the Model
+```
+# evaluate the performance the new model and report the results
+score = model.evaluate_generator(validate_generator, nb_validate_samples/batch_size)
+print("Test Score:", score[0])
+print("Test Accuracy:", score[1])
+
+Test Score: 0.00213089538738
+Test Accuracy: 1.0
+```
