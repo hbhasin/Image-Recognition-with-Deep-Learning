@@ -535,3 +535,5 @@ plt.ylabel('Loss')
 plt.ylim(0,max(y1))
 plt.show()
 ```
+
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20Plot.PNG"></a>
