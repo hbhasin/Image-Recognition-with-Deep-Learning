@@ -407,11 +407,34 @@ Animations that may help your intuitions about the learning process dynamics. Le
 * * *
 
 ### Compile the Model
-RMSProp was the optimizer used on all the datasets during the transfer learning phase. For the two class Noodles dataset, loss was defined as 'binary_crossentropy'. For all other datasets the loss was defined as 'categorical_crossentropy'. To measure test score accuracy
+RMSProp with its default values was the optimizer used on all the datasets during the transfer learning phase. Keras recommends leaving the parameters at their default values:
+keras.optimizers.RMSprop(lr=0.001, rho=0.9, epsilon=1e-08, decay=0.0)
+lr: float >= 0. Learning rate.
+rho: float >= 0.
+epsilon: float >= 0. Fuzz factor.
+decay: float >= 0. Learning rate decay over each update.
+
+For the two class Noodles dataset, loss was defined as 'binary_crossentropy'. For all other datasets the loss was defined as 'categorical_crossentropy' which is a one-hot vector of the number of classes used in the classification.
 
 ```
 # compile the new model using a RMSProp optimizer
 model.compile(optimizer = 'rmsprop',
     loss = 'categorical_crossentropy',
     metrics = ['accuracy'])
+```
+
+### Fit the Model
+
+```
+# fit the model, log the results and the training time
+now = datetime.datetime.now
+t = now()
+transfer_learning_history = model.fit_generator(
+    train_generator,
+    nb_epoch = nb_epochs,
+    samples_per_epoch = nb_train_samples,
+    validation_data = validate_generator,
+    nb_val_samples = nb_validate_samples,
+    class_weight='auto')
+print('Training time: %s' % (now() - t))
 ```
