@@ -317,6 +317,7 @@ Data preparation is almost always required when working with any data analysis, 
 
 The figure below displays the effect of applying rotation, width and height shifts, shear, zoom , fill mode and horizontal flip on a random butterfly image:
 
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Image%20Augmentation.PNG"></a>
 
 
 
