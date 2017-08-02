@@ -69,8 +69,9 @@ As a comparison, a simple one convolutional layer model was built to train and v
 
 Top Prediction | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
-Carbonara | 0.61
-Soup Bowl | | 0.51
+Carbonara | 0.61 | |
+Soup Bowl | | 0.51 | | 0.55
+Plate     | | |0.54 |
 
 Top Prediction | InceptionV3 - Fried Noodles | InceptionV3 - Noodle Soup | Xception- Fried Noodles | Xception - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
