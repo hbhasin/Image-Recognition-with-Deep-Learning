@@ -373,3 +373,16 @@ validate_generator = validate_datagen.flow_from_directory(
     target_size = (img_width, img_height),
     batch_size = batch_size)
 ```
+### Define the Model
+
+
+```
+# set up transfer learning on pre-trained ImageNet InceptionV3 model - remove fully connected layer and replace
+# with softmax for classifying the number of classes in the dataset
+incepV3_model = InceptionV3(weights = 'imagenet', include_top = False)
+x = incepV3_model.output
+x = GlobalAveragePooling2D()(x)
+x = Dense(1024, activation='relu')(x)
+predictions = Dense(nb_classes, activation = 'softmax')(x)
+model = Model(input = incepV3_model.input, output = predictions)
+```
