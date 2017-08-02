@@ -67,66 +67,19 @@ As a comparison, a simple one convolutional layer model was built to train and v
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
 
-**Pre-trained VGG16 Model Top 5 Results on Fried Noodles:**
-
-Carbonara: 0.6117149
-
-Plate: 0.26870382
-
-Broccoli: 0.031503119
-
-Spaghetti_squash: 0.017119782
-
-Soup_bowl: 0.013476022
-
-**Pre-trained VGG16 Model Top 5 Results on Noodle Soup:**
-
-Soup_bowl: 0.50961721
-
-Consomme: 0.19602837
-
-Hot_pot: 0.10246541
-
-Guacamole: 0.03501397
-
-Wooden_spoon: 0.031055735
-
-**Pre-trained VGG19 Model Top 5 Results on Fried Noodles:**
-
-Plate: 0.5357362
-
-Carbonara: 0.33109817
-
-Spaghetti_squash: 0.029616693
-
-Broccoli: 0.02910158
-
-Meat_loaf: 0.015127996
-
-**Pre-trained VGG16 Model Top 5 Results on Noodle Soup:**
-
-Soup_bowl: 0.55333561
-
-Consomme: 0.19860746
-
-Hot_pot: 0.066726588
-
-Guacamole: 0.030046616
-
-Broccoli: 0.017045854
-
-Prediction     | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
+Top Prediction | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
-Carbonara | 11,174
-16th & Broadway | 3,565
-1350 Larimer    | 10,837
-18th & California | 9,865
+Carbonara | 0.61
+Soup Bowl | | 0.51
+
+Top Prediction | InceptionV3 - Fried Noodles | InceptionV3 - Noodle Soup | Xception- Fried Noodles | Xception - Noodle Soup
+-------------- | --------------- | ------------- | --------------- | -------------
 1550 Glenarm | 9,441
 18th & Arapahoe | 8,531
 20th & Chestnut | 8,240
 13th & Speer | 8,228
 REI	 | 8,218
-16th & Little Raven | 8,198
+
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG"></a>
 
