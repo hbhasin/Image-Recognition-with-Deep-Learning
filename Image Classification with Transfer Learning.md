@@ -214,7 +214,7 @@ Cabbage Butterfly | | 0.99 | | | 0.99
 Admiral | | | 0.99 | | | 0.99
 Black and Gold Garden Spider | | | | 0.36
 
-Top Prediction | InceptionV3 - Papilo Cresphontes | InceptionV3 - Pieris Rapae | Xception - Vanessa Atalanta | Xception - Papilo Cresphontes | Xception - Pieris Rapae | Xception - Vanessa Atalanta
+Top Prediction | InceptionV3 - Papilo Cresphontes | InceptionV3 - Pieris Rapae | InceptionV3 - Vanessa Atalanta | Xception - Papilo Cresphontes | Xception - Pieris Rapae | Xception - Vanessa Atalanta
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Admiral | 0.89 | | 0.95 | 0.33 | | 0.94
 Cabbage Butterfly | | 0.91 | | | 0.96
