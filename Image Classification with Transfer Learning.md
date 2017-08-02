@@ -105,6 +105,13 @@ Walker Hound     | | | 0.47
 Bull Mastiff | | | | 0.37
 Basset | | | | | | 0.69
 
+Top Prediction | InceptionV3 - Bull Dog | InceptionV3 - Pit Bull | InceptionV3- Foxhound | Xception - Bull Dog | Xception - Pit Bull | Xception - Foxhound
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+French Bull Dog | 0.42 | | | 0.15
+Staffordshire Bull Terrier | | 0.90 | | | 0.51
+Walker Hound     | | | | | | 0.94
+Basset | | | 0.96 | | |
+
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
 
 
