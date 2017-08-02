@@ -138,7 +138,7 @@ Bee Eater | 0.78
 House Finch | | 0.22
 Brambling | | | 0.37 | | | 0.49
 Robin | | | | 0.53
-Water Ouzel | | | | 0.4
+Water Ouzel | | | | | 0.4
 
 ## Code Details
 
