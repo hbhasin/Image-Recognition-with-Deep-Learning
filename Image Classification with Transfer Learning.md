@@ -115,8 +115,7 @@ Guacamole: 0.030046616
 
 Broccoli: 0.017045854
 
-Prediction     | VGG16 | VGG16 | VGG19 | VGG19
-
+Prediction     | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
 Carbonara | 11,174
 16th & Broadway | 3,565
