@@ -190,8 +190,22 @@ Ringlet | | | 0.97 | | | 0.98
 Top Prediction | InceptionV3 - Heliconius Erato | InceptionV3 - Heliconius Charitonius | InceptionV3 - Junonia Coenia | Xception - Heliconius Erato | Xception - Heliconius Charitonius | Xception - Junonia Coenia
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 Admiral | 0.82 | | | 0.81
-Sulphur Butterfly | | 0.8 | | 0.24
+Sulphur Butterfly | | 0.8
 Ringlet | | | 0.98 | |0.39 | 0.53
+
+Top Prediction | VGG16 - Danaus Plexippus | VGG16 - Lycaena Phlaeas | VGG16 - Nymphalis Antiopa | VGG19 - Danaus Plexippus | VGG16 - Lycaena Phlaeas | VGG16 - Nymphalis Antiopa
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Monarch | 0.99 | | | 0.99
+Lycaenid | | 0.56
+Admiral | | | 0.99 | | | 0.97
+Ringlet | | | | | 0.58
+
+Top Prediction | InceptionV3 - Danaus Plexippus | InceptionV3 - Lycaena Phlaeas | InceptionV3 - Nymphalis Antiopa | Xception - Danaus Plexippus | InceptionV3 - Lycaena Phlaeas | InceptionV3 - Nymphalis Antiopa
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Monarch | 0.96 | | | 0.92
+Lycaenid | | | | | | 0.31
+Admiral | | | 0.71 | | |
+Ringlet | 0.46 | | | | 0.55
 
 ## Code Details
 
