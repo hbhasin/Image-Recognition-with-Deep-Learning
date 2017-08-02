@@ -92,8 +92,8 @@ Top Prediction | InceptionV3 - Leaf 01 | InceptionV3 - Leaf 02 | InceptionV3- Le
 -------------- | --------------- | ------------- | --------------- | ------------- | ----- | ----- |
 Computer Keyboard | 0.81 | | 0.73
 Pot | | 0.19 | 0.1
-Head Cabbage | | | | 0.1
-Packet | | | | | | | 0.05
+Head Cabbage | | | | | 0.1
+Packet | | | | | | 0.05
 
 
 
