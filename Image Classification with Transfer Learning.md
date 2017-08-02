@@ -66,7 +66,7 @@ As a comparison, a simple one convolutional layer model was built to train and v
 ## Quick Checkout on Keras ImageNet pre-trained Models
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 2em;">
+
 Top Prediction | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
 -------------- | --------------- | ------------- | --------------- | -------------
 Carbonara | 0.61 | |
@@ -94,7 +94,7 @@ Computer Keyboard | 0.81 | | | 0.73
 Pot | | 0.19 | 0.1
 Head Cabbage | | | | | 0.1
 Packet | | | | | | 0.05
-</span>
+
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
 
 Top Prediction | VGG16 - Bull Dog | VGG16 - Pit Bull | VGG16- Foxhound | VGG19 - Bull Dog | VGG19 - Pit Bull | VGG19 - Foxhound
@@ -113,17 +113,15 @@ Basset     | | | 0.96 | | | 0.94
 
 Top Prediction | VGG16 - Border Collie | VGG16 - Siberian Husky | VGG16 - Bernese Mountain Dog | VGG19 - Border Collie | VGG19 - Siberian Husky | VGG19 - Bernese Mountain Dog
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-French Bull Dog | 0.63
-Staffordshire Bull Terrier | | 0.97 | | | 0.93
-Walker Hound     | | | 0.47
-Bull Mastiff | | | | 0.37
-Basset | | | | | | 0.69
+Border Collie | 0.33 | | | 0.5|
+Siberian Husky | | 0.71 | | | 0.65
+Bernese Mountain Dog | | | 0.86 | | | 0.98
 
 Top Prediction | InceptionV3 - Border Collie | InceptionV3 - Siberian Husky | InceptionV3- Bernese Mountain Dog | Xception - Border Collie | Xception - Siberian Husky | Xception- Bernese Mountain Dog
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-French Bull Dog | 0.42 | | | 0.15
-Staffordshire Bull Terrier | | 0.90 | | | 0.51
-Basset     | | | 0.96 | | | 0.94
+Border Collie | 0.35 | | | 0.5|
+Siberian Husky | | 0.69 | | | 0.65
+Bernese Mountain Dog | | | 0.98 | | | 0.93
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
 
