@@ -125,6 +125,20 @@ Bernese Mountain Dog | | | 0.98 | | | 0.93
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds%20-%20Initial%20Checkout.PNG"></a>
 
+Top Prediction | VGG16 - Common Yellowthroat | VGG16 - Winter Wren | VGG16 - Pine Warbler | VGG16 - Common Yellowthroat | VGG16 - Winter Wren | VGG16 - Pine Warbler
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Gold Finch | 0.95 | | | 0.8
+Water Ouzel | | 0.36 | | | 0.66
+Jay | | | 0.39 | | |
+Litte Blue Heron | | | | | | 0.49
+
+Top Prediction | InceptionV3 - Common Yellowthroat | InceptionV3 - Winter Wren | InceptionV3 - Pine Warbler | Xception - Common Yellowthroat | Xception - Winter Wren | Xception - Pine Warbler
+-------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
+Bee Eater | 0.78
+House Finch | | 0.22
+Brambling | | | 0.37 | | | 0.49
+Robin | | | | 0.53
+Water Ouzel | | | | 0.4
 
 ## Code Details
 
