@@ -704,7 +704,7 @@ plt.ylabel('Loss')
 plt.ylim(0,2)
 plt.show()
 ```
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20FT%20Results.PNG"></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20FT%20Plot.PNG"></a>
 
 ### Predict Unseen Images
 The model.predict function generates output predictions for the input images which are retrieved from the dataset's test folder.
