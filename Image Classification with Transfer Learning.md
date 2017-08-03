@@ -704,4 +704,4 @@ plt.ylabel('Loss')
 plt.ylim(0,2)
 plt.show()
 ```
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20FT%20Plot.PNG"></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20FT%20Plot.PNG"></a>
