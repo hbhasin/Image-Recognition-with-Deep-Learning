@@ -235,6 +235,9 @@ Monarch | 0.47 | 0.66
 
 The following code applies to all the Keras pre-trained models except as noted otherwise.
 
+## Transfer Learning Phase
+In the Transfer Learning phase only the new fully connected layer was trained on the features extracted from the pre-trained models.
+
 ### Import Keras Libraries
 Keras supports VGG16, VGG19, ResNet50, InceptionV3 and Xception models that have been pre-trained on ImageNet. 
 
@@ -429,7 +432,7 @@ model.compile(optimizer = 'rmsprop',
 ```
 
 ### Fit (Train) the Model
-Since the datasets were trained and validated on systems with different CPUs and RAM, the training and validating times were collected and reported. Number of epochs was set to 20 for all datasets unless otherwise specified. All training and validation images were used for training and all validating, respectively.
+Since the datasets were trained and validated on systems with different CPUs and RAM, the training and validating times were collected and reported. Number of epochs was set to 20 for all datasets unless otherwise specified. All training and validation images were used for training and validating, respectively.
 
 ```
 # fit the model, log the results and the training time
@@ -490,6 +493,7 @@ model.save('butterflies_inception_v3_model_tl.h5')
 ```
 
 ### Plot the test results
+The model.fit_generator function returns a history object that contains information on the training and validating accuracy and loss. This information was plotted to provide a graphical representation of the training versus validating test results. 
 ```
 xfer_acc = transfer_learning_history.history['acc']
 val_acc = transfer_learning_history.history['val_acc']
@@ -537,3 +541,33 @@ plt.show()
 ```
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20TL%20Plot.PNG"></a>
+
+```
+num_images = len(glob.glob("butterflies_test/*.jpg"))
+predict_files = glob.glob("butterflies_test/*.jpg")
+
+im = cv2.imread(predict_files[0])
+im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
+im = cv2.resize(im, (256, 256)).astype(np.float32)
+im = np.expand_dims(im, axis = 0)/255
+
+predictor, image_id = [], []
+for i in predict_files:
+    im = cv2.imread(i)
+    im = cv2.resize(cv2.cvtColor(im, cv2.COLOR_BGR2RGB), (256, 256)).astype(np.float32) / 255.0
+    im = np.expand_dims(im, axis =0)
+    outcome = [np.argmax(model.predict(im))]
+    predictor.extend(list(outcome))
+    image_id.extend([i.rsplit("\\")[-1]])
+    
+final = pd.DataFrame()
+final["id"] = image_id
+final["Butterfly"] = predictor
+final.head(num_images)
+
+
+
+## Fine Tuning Phase
+In the Fine Tuning phase some or none of the lower convolutional layers of the model were frozen depending upon the results from the Transfer Learning phase.
+
+
