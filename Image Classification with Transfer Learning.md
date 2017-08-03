@@ -69,7 +69,10 @@ As a comparison, a simple one convolutional layer model was built to train and v
 
 The purpose behind performing a quick checkout on the ImageNet pre-trained models was to determine if fine-tuning would be needed in addition to transfer learning using the following rationale recommended in the [CS231n Stanford Convolutional Neural Networls for Visual  Recognition](http://cs231n.github.io/transfer-learning/):
 
-1. New dataset is small and similar to original dataset: Since the data is small, it is not a good idea to fine-tune the ConvNet due to ...overfitting concerns. Since the data is similar to the original data, we expect higher-level features in the ConvNet to be relevant ...to this dataset as well. Hence, the best idea might be to train a linear classifier on the CNN codes.
+1. New dataset is small and similar to original dataset: Since the data is small, it is not a good idea to fine-tune the ConvNet due to overfitting concerns. Since the data is similar to the original data, we expect higher-level features in the ConvNet to be relevant to this dataset as well. Hence, the best idea might be to train a linear classifier on the CNN codes.
+2. New dataset is large and similar to the original dataset. Since we have more data, we can have more confidence that we won’t overfit if we were to try to fine-tune through the full network.
+3. New dataset is small but very different from the original dataset. Since the data is small, it is likely best to only train a linear classifier. Since the dataset is very different, it might not be best to train the classifier form the top of the network, which contains more dataset-specific features. Instead, it might work better to train the SVM classifier from activations somewhere earlier in the network.
+4. New dataset is large and very different from the original dataset. Since the dataset is very large, we may expect that we can afford to train a ConvNet from scratch. However, in practice it is very often still beneficial to initialize with weights from a pretrained model. In this case, we would have enough data and confidence to fine-tune through the entire network. 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
 
