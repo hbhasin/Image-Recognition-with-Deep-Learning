@@ -582,7 +582,7 @@ classes = {value : key for key, value in classes.items()}
 final["Butterfly"] = final["Butterfly"].apply(lambda x: classes[x])
 final.head(num_images)
 ```
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20TL%20Results.PNG"></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction20TL%20Results.PNG"></a>
 
 
 
