@@ -593,6 +593,7 @@ final.to_csv("csv/butterflies_with_pretrained_vgg19_model_tl_test.csv", index=Fa
 In the Fine Tuning phase some or none of the lower convolutional layers of the model were frozen depending upon the results from the Transfer Learning phase.
 
 ### Train Layers, Compile Model, Fit Model
+In the fine tuning mode.compile function, the optimizer used was Stochastic Gradient Descent (SGD) with a learning rate of 0.0001 and a momentum of 0.9.
 ```
 # Step 1 - Set up fine tuning on pre-trained ImageNet vgg19 model - train all lower 94 layers
 for layer in model.layers:
@@ -741,5 +742,41 @@ final.head(num_images)
 
 ### Save the Prediction Results
 ```
-final.to_csv("csv/butterflies_with_pretrained_vgg19_model_tl_test.csv", index=False)
+final.to_csv("csv/butterflies_with_pretrained_vgg19_model_ft_test.csv", index=False)
 ```
+## Summary of Results
+## Transfer Learning Accuracy
+
+Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
+----- | --------------- | -------------- | ------------ | ------------- | ------------------
+VGG16 | 0.86 | 0.92
+VGG19 | 0.86 | 1.0
+InceptionV3 | 1.0 | 0.97
+Xception | 1.0 | 0.7
+
+## Transfer Learning Training Time (HH:MM)
+
+Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
+----- | --------------- | -------------- | ------------ | ------------- | ------------------
+VGG16 | 1:40 | 0:38
+VGG19 | 2:01 | 0:44
+InceptionV3 | 0:52 | 0:29
+Xception | 1:15 | 0:51
+
+## Fine Tuning Accuracy
+
+Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
+----- | --------------- | -------------- | ------------ | ------------- | ------------------
+VGG16 | 0.94 | 1.0
+VGG19 | 0.78 | 0.97
+InceptionV3 | | 0.94
+Xception | 0.84 | 0.81
+
+## Fine Tuning Training Time (HH:MM)
+
+Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
+----- | --------------- | -------------- | ------------ | ------------- | ------------------
+VGG16 | 4:09 | 1:36
+VGG19 | 5:02 | 1:43
+InceptionV3 | | 0:41
+Xception | 1:33 | 1:06
