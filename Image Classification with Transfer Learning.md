@@ -106,6 +106,7 @@ Packet | | | | | | 0.05
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
 
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs-Initial Checkout-xls.PNG"></a>
 Top Prediction | VGG16 - Bull Dog | VGG16 - Pit Bull | VGG16- Foxhound | VGG19 - Bull Dog | VGG19 - Pit Bull | VGG19 - Foxhound
 -------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
 French Bull Dog | 0.63
