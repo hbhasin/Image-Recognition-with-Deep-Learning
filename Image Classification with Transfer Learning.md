@@ -392,14 +392,14 @@ Since ImageNet pre-trained models were used on the datasets in this project the 
 GlobalAveragePooling2D progressively reduces the spatial size and the amount of parameters and computation in the network as well as control overfitting. The [Dense](https://keras.io/layers/core/#dense) layer is the densely-connected Neural Network layer of size 1024 with the [Rectified Linear Unit](http://cs231n.github.io/neural-networks-1/) (relu) as the activator.
 
 ```
-# set up transfer learning on pre-trained ImageNet InceptionV3 model - remove fully connected layer and replace
+# set up transfer learning on pre-trained ImageNet VGG19 model - remove fully connected layer and replace
 # with softmax for classifying the number of classes in the dataset
-incepV3_model = InceptionV3(weights = 'imagenet', include_top = False)
-x = incepV3_model.output
+vgg19_model = VGG19(weights = 'imagenet', include_top = False)
+x = vgg19_model.output
 x = GlobalAveragePooling2D()(x)
 x = Dense(1024, activation='relu')(x)
 predictions = Dense(nb_classes, activation = 'softmax')(x)
-model = Model(input = incepV3_model.input, output = predictions)
+model = Model(input = vgg19_model.input, output = predictions)
 ```
 
 ### Freeze the Layers of the Model
@@ -407,7 +407,7 @@ Prior to compiling the model, all the layers of the pre-trained model were froze
 
 ```
 # freeze all layers of the pre-trained InceptionV3 model
-for layer in incepV3_model.layers:
+for layer in vgg19_model.layers:
     layer.trainable = False
 ```
 ### Learning Process Animation
@@ -458,29 +458,29 @@ transfer_learning_history = model.fit_generator(
 print('Training time: %s' % (now() - t))
 
 Epoch 1/20
-592/592 [==============================] - 310s - loss: 0.4048 - acc: 0.8733 - val_loss: 0.5311 - val_acc: 0.8284
+592/592 [==============================] - 439s - loss: 2.1416 - acc: 0.2686 - val_loss: 1.9227 - val_acc: 0.1716
 Epoch 2/20
-592/592 [==============================] - 298s - loss: 0.0639 - acc: 0.9899 - val_loss: 0.2010 - val_acc: 0.9467
+592/592 [==============================] - 433s - loss: 1.5334 - acc: 0.5034 - val_loss: 1.5641 - val_acc: 0.4083
 Epoch 3/20
-592/592 [==============================] - 298s - loss: 0.0391 - acc: 0.9848 - val_loss: 0.1714 - val_acc: 0.9408
+592/592 [==============================] - 435s - loss: 1.2112 - acc: 0.6351 - val_loss: 1.2631 - val_acc: 0.5562
 Epoch 4/20
-592/592 [==============================] - 299s - loss: 0.0249 - acc: 0.9932 - val_loss: 0.1329 - val_acc: 0.9586
+592/592 [==============================] - 437s - loss: 0.9724 - acc: 0.7196 - val_loss: 0.9148 - val_acc: 0.7456
 Epoch 5/20
-592/592 [==============================] - 298s - loss: 0.0354 - acc: 0.9932 - val_loss: 0.1090 - val_acc: 0.9645
+592/592 [==============================] - 434s - loss: 0.8360 - acc: 0.7568 - val_loss: 0.8543 - val_acc: 0.7337
 .
 .
 .
 Epoch 16/20
-592/592 [==============================] - 301s - loss: 0.0084 - acc: 0.9966 - val_loss: 0.0331 - val_acc: 0.9822
+592/592 [==============================] - 435s - loss: 0.2825 - acc: 0.9206 - val_loss: 0.4937 - val_acc: 0.8225
 Epoch 17/20
-592/592 [==============================] - 300s - loss: 0.0035 - acc: 0.9983 - val_loss: 0.0570 - val_acc: 0.9882
+592/592 [==============================] - 481s - loss: 0.2692 - acc: 0.9274 - val_loss: 0.4280 - val_acc: 0.8521
 Epoch 18/20
-592/592 [==============================] - 301s - loss: 0.0168 - acc: 0.9966 - val_loss: 0.0620 - val_acc: 0.9822
+592/592 [==============================] - 434s - loss: 0.2565 - acc: 0.9189 - val_loss: 0.4483 - val_acc: 0.8698
 Epoch 19/20
-592/592 [==============================] - 299s - loss: 0.0280 - acc: 0.9932 - val_loss: 0.0724 - val_acc: 0.9822
+592/592 [==============================] - 433s - loss: 0.2495 - acc: 0.9172 - val_loss: 0.4029 - val_acc: 0.8521
 Epoch 20/20
-592/592 [==============================] - 300s - loss: 0.0073 - acc: 0.9966 - val_loss: 0.1116 - val_acc: 0.9763
-Training time: 1:40:11.615244
+592/592 [==============================] - 435s - loss: 0.2510 - acc: 0.9155 - val_loss: 0.3521 - val_acc: 0.8935
+Training time: 2:25:45.271227
 ```
 
 
@@ -491,15 +491,14 @@ score = model.evaluate_generator(validate_generator, nb_validate_samples/batch_s
 print("Test Score:", score[0])
 print("Test Accuracy:", score[1])
 
-Test Score: 0.00213089538738
-Test Accuracy: 1.0
+Test Score: 0.336898863316
+Test Accuracy: 0.90625
 ```
 ### Save the model
 
 ```
 # save transfer learning model for offline prediction purposes
-
-model.save('butterflies_inception_v3_model_tl.h5')
+model.save('butterflies_vgg19_model_tl.h5')
 ```
 
 ### Plot the test results
@@ -553,7 +552,8 @@ plt.show()
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20TL%20Plot.PNG"></a>
 
 ### Predicting Unseen Images
- 
+The model.predict function generates output predictions for the input images which are retrieved from the dataset's test folder.
+
 ```
 num_images = len(glob.glob("butterflies_test/*.jpg"))
 predict_files = glob.glob("butterflies_test/*.jpg")
