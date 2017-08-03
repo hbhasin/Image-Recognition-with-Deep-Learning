@@ -586,6 +586,7 @@ final.head(num_images)
 
 
 
+
 ## Fine Tuning Phase
 In the Fine Tuning phase some or none of the lower convolutional layers of the model were frozen depending upon the results from the Transfer Learning phase.
 
