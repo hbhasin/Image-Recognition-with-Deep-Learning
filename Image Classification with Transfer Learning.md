@@ -45,6 +45,8 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 
 This study will use the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
 
+
+
 ## Hardware Details
 Training Deep Learning networks require tremendous processing power to handle multiple matrix multiplications. GPUs are  ideal for performing these operations.  Facebook recently reported that its scientits were able to train nearly 1.3 million images in under one hour using [256 Tesla P100 GPUs](https://news.developer.nvidia.com/facebook-trains-imagenet-in-1-hour/) that previously took days on a single system. In 2012 the ImageNet ILSVRC model was trained on 1.2 million images over the period of 2–3 weeks across multiple GPUs. For the small datasets used in this project having a Titan GTX 1080 GPU would have been able to train 8X faster than an i7 Intel CPU running at 3.5GHz.
 
