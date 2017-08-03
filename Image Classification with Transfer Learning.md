@@ -67,6 +67,10 @@ As a comparison, a simple one convolutional layer model was built to train and v
 
 ## Quick Checkout on Keras ImageNet pre-trained Models
 
+The purpose behind performing a quick checkout on the ImageNet pre-trained models was to determine if fine-tuning would be needed in addition to transfer learning using the following rationale recommended in the [CS231n Stanford Convolutional Neural Networls for Visual  Recognition](http://cs231n.github.io/transfer-learning/):
+
+1. New dataset is small and similar to original dataset: Since the data is small, it is not a good idea to fine-tune the ConvNet due to ...overfitting concerns. Since the data is similar to the original data, we expect higher-level features in the ConvNet to be relevant ...to this dataset as well. Hence, the best idea might be to train a linear classifier on the CNN codes.
+
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
 
 Top Prediction | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
@@ -592,7 +596,9 @@ final.to_csv("csv/butterflies_with_pretrained_vgg19_model_tl_test.csv", index=Fa
 
 
 ## Fine Tuning Phase
-In the Fine Tuning phase some or none of the lower convolutional layers of the model were frozen depending upon the results from the Transfer Learning phase.
+In the Fine Tuning phase some or none of the lower convolutional layers of the model were prevented from training depending upon the results from the Transfer Learning phase.
+
+
 
 ### Train Layers, Compile Model, Fit Model
 In the fine tuning mode.compile function, the optimizer used was Stochastic Gradient Descent (SGD) with a learning rate of 0.0001 and a momentum of 0.9.
