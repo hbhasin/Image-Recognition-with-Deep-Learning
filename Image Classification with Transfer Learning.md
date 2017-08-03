@@ -659,7 +659,7 @@ Test Accuracy: 1.0
 model.save('butterflies_vgg19_model_ft.h5')
 ```
 ### Plot the Test Results
-'''
+```
 ft_acc = fine_tuning_history.history['acc']
 val_acc = fine_tuning_history.history['val_acc']
 ft_loss = fine_tuning_history.history['loss']
