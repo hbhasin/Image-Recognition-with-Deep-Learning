@@ -759,39 +759,6 @@ final.head(num_images)
 ```
 final.to_csv("csv/butterflies_with_pretrained_vgg19_model_ft_test.csv", index=False)
 ```
-## Summary of Results
-### Transfer Learning Accuracy
+## Summary of Test Results
 
-Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
------ | --------------- | -------------- | ------------ | ------------- | ------------------
-VGG16 | 0.86 | 0.92 | 0.36 | 0.59 | 0.88
-VGG19 | 0.86 | 0.86 | 0.19 | 0.5 | 0.90
-InceptionV3 | | 1.0 | 0.97 | 0.87 | 0.88
-Xception | 1.0 | 0.7 | 0.77 | 0.56
-
-### Transfer Learning Training Time (HH:MM)
-
-Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
------ | --------------- | -------------- | ------------ | ------------- | ------------------
-VGG16 | 1:40 | 0:38 | 1:21 | 1:14 | 2:02
-VGG19 | 2:01 | 2:01 | 1:50 | 1:30 | 2:25
-InceptionV3 | | 0:52 | 0:29 | 1:08
-Xception | 1:15 | 0:51 | 2:00 | 1:57
-
-### Fine Tuning Accuracy
-
-Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
------ | --------------- | -------------- | ------------ | ------------- | ------------------
-VGG16 | 0.94 | 1.0 | 0.63 | 0.78 | 0.97
-VGG19 | 0.78 | 0.97 | 0.61 | 0.75
-InceptionV3 | | 0.94 | 0.85 | 0.88
-Xception | 0.84 | 0.81 | 0.98 | 0.78
-
-### Fine Tuning Training Time (HH:MM)
-
-Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
------ | --------------- | -------------- | ------------ | ------------- | ------------------
-VGG16 | 4:09 | 1:36 | 3:28 | 2:31 | 4:59
-VGG19 | 5:02 | 1:43 | 4:35 | 3:04
-InceptionV3 | | 0:41 | 1:37 | 1:23
-Xception | 1:33 | 1:06 | 2:29 | 2:13
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Test%20Results.PNG"></a>
