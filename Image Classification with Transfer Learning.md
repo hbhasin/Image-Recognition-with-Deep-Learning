@@ -284,6 +284,16 @@ The datasets used in this project ranged from a simple two-class (Fried Noodles 
 [Butterflies Data](http://www.comp.leeds.ac.uk/scs6jwks/dataset/leedsbutterfly/) Josiah Wang, Katja Markert, and Mark Everingham, Learning Models for Object Recognition from Natural Language Descriptions, In Proceedings of the 20th British Machine Vision Conference (BMVC2009)
 
 ### Load Training and Validation Datasets
+The raw dataset was first split into a training dataset with 80% of the images and a validation dataset with the remaining 20%. Then, 10% of this training dataset was allocated for prediction purposes. This test dataset was not part of the training or validating datasets
+
+```
+# split raw dataset into 80% for training and 20% for validating
+train, validate = train_test_split(x, test_size = 0.2, random_state = 42)
+
+# split training dataset into 90% for training and 10% for predicting
+train, test = train_test_split(x, test_size = 0.1, random_state = 42)
+```
+
 The training dataset is kept in the 'data/train' folder and the validation dataset in the 'data/validate' folder.
 
 Typical input image sizes are 224×224, 227×227, 256×256, and 299×299. VGG16, VGG19 accept 224×224 input images while Inception V3 and Xception require 299×299 pixel inputs.
@@ -542,6 +552,8 @@ plt.show()
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20TL%20Plot.PNG"></a>
 
+### Predicting Unseen Images
+ 
 ```
 num_images = len(glob.glob("butterflies_test/*.jpg"))
 predict_files = glob.glob("butterflies_test/*.jpg")
@@ -563,7 +575,13 @@ for i in predict_files:
 final = pd.DataFrame()
 final["id"] = image_id
 final["Butterfly"] = predictor
+
+classes = train_generator.class_indices
+classes = {value : key for key, value in classes.items()}
+
+final["Butterfly"] = final["Butterfly"].apply(lambda x: classes[x])
 final.head(num_images)
+```
 
 
 
