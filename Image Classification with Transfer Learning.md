@@ -43,7 +43,7 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 -  Xception
 
 
-This study will use the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
+This study used the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
 
 
 
