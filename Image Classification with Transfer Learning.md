@@ -456,7 +456,8 @@ transfer_learning_history = model.fit_generator(
     nb_val_samples = nb_validate_samples,
     class_weight='auto')
 print('Training time: %s' % (now() - t))
-
+```
+```
 Epoch 1/20
 592/592 [==============================] - 439s - loss: 2.1416 - acc: 0.2686 - val_loss: 1.9227 - val_acc: 0.1716
 Epoch 2/20
@@ -483,7 +484,6 @@ Epoch 20/20
 Training time: 2:25:45.271227
 ```
 
-
 ### Evaluate the Model
 ```
 # evaluate the performance the new model and report the results
@@ -495,7 +495,6 @@ Test Score: 0.336898863316
 Test Accuracy: 0.90625
 ```
 ### Save the model
-
 ```
 # save transfer learning model for offline prediction purposes
 model.save('butterflies_vgg19_model_tl.h5')
@@ -584,10 +583,125 @@ final.head(num_images)
 ```
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20TL%20Results.PNG"></a>
 
-
+### Save the Prediction Results
+```
+final.to_csv("csv/butterflies_with_pretrained_vgg19_model_tl_test.csv", index=False)
+```
 
 
 ## Fine Tuning Phase
 In the Fine Tuning phase some or none of the lower convolutional layers of the model were frozen depending upon the results from the Transfer Learning phase.
 
+### Train Layers, Compile Model, Fit Model
+```
+# Step 1 - Set up fine tuning on pre-trained ImageNet vgg19 model - train all lower 94 layers
+for layer in model.layers:
+    layer.trainable = True
+    
+# Step 2 - Compile the revised model using SGD optimizer with a learing rate of 0.0001 and a momentum of 0.9
+model.compile(optimizer = SGD(lr = 0.0001, momentum=0.9), 
+    loss = 'categorical_crossentropy',
+    metrics = ['accuracy'])
 
+# Step 3 - Fit the revised model, log the results and the training time
+now = datetime.datetime.now
+t = now()
+fine_tuning_history = model.fit_generator(
+    train_generator,
+    nb_epoch = nb_epochs,
+    samples_per_epoch = nb_train_samples,
+    validation_data = validate_generator,
+    nb_val_samples = nb_validate_samples,
+    class_weight='auto')
+print('Training time: %s' % (now() - t))
+```
+```
+Epoch 1/20
+592/592 [==============================] - 1111s - loss: 0.1320 - acc: 0.9578 - val_loss: 0.2041 - val_acc: 0.9349
+Epoch 2/20
+592/592 [==============================] - 1105s - loss: 0.0874 - acc: 0.9713 - val_loss: 0.1727 - val_acc: 0.9172
+Epoch 3/20
+592/592 [==============================] - 1061s - loss: 0.0436 - acc: 0.9899 - val_loss: 0.1797 - val_acc: 0.9172
+Epoch 4/20
+592/592 [==============================] - 1107s - loss: 0.0427 - acc: 0.9882 - val_loss: 0.1557 - val_acc: 0.9527
+Epoch 5/20
+592/592 [==============================] - 1062s - loss: 0.0317 - acc: 0.9949 - val_loss: 0.0987 - val_acc: 0.9586
+.
+.
+.
+Epoch 16/20
+592/592 [==============================] - 1167s - loss: 0.0065 - acc: 1.0000 - val_loss: 0.0654 - val_acc: 0.9645
+Epoch 17/20
+592/592 [==============================] - 1160s - loss: 0.0108 - acc: 0.9966 - val_loss: 0.0390 - val_acc: 0.9822
+Epoch 18/20
+592/592 [==============================] - 1107s - loss: 0.0034 - acc: 1.0000 - val_loss: 0.0606 - val_acc: 0.9704
+Epoch 19/20
+592/592 [==============================] - 1112s - loss: 0.0037 - acc: 1.0000 - val_loss: 0.0924 - val_acc: 0.9527
+Epoch 20/20
+592/592 [==============================] - 1155s - loss: 0.0071 - acc: 0.9983 - val_loss: 0.0674 - val_acc: 0.9704
+Training time: 6:14:59.254681
+```
+### Evaluate Model
+```
+# evaluate the performance the new model and report the results
+score = model.evaluate_generator(validate_generator, nb_validate_samples/batch_size)
+print("Test Score:", score[0])
+print("Test Accuracy:", score[1])
+```
+```
+Test Score: 0.0136573100463
+Test Accuracy: 1.0
+```
+
+### Save the Fine Tuning Model
+```
+# save fine-tuning model for offline prediction purposes
+model.save('butterflies_vgg19_model_ft.h5')
+```
+### Plot the Test Results
+'''
+ft_acc = fine_tuning_history.history['acc']
+val_acc = fine_tuning_history.history['val_acc']
+ft_loss = fine_tuning_history.history['loss']
+val_loss = fine_tuning_history.history['val_loss']
+epochs = range(len(ft_acc))
+
+x = np.array(epochs)
+y = np.array(xfer_acc)
+x_smooth = np.linspace(x.min(), x.max(), 300)
+y_smooth = spline(x, y, x_smooth)
+plt.plot(x_smooth, y_smooth, 'r-', label = 'Training')
+
+x1 = np.array(epochs)
+y1 = np.array(val_acc)
+x1_smooth = np.linspace(x1.min(), x1.max(), 300)
+y1_smooth = spline(x1, y1, x1_smooth)
+
+plt.plot(x1_smooth, y1_smooth, 'g-', label = 'Validation')
+plt.title('Fine-Tuning - Training and Validation Accuracy')
+plt.legend(loc = 'lower left', fontsize = 9)
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.ylim(0,1.02)
+
+plt.figure()
+x = np.array(epochs)
+y = np.array(xfer_loss)
+x_smooth = np.linspace(x.min(), x.max(), 300)
+y_smooth = spline(x, y, x_smooth)
+plt.plot(x_smooth, y_smooth, 'r-', label = 'Training')
+
+x1 = np.array(epochs)
+y1 = np.array(val_loss)
+x1_smooth = np.linspace(x1.min(), x1.max(), 300)
+y1_smooth = spline(x1, y1, x1_smooth)
+
+plt.plot(x1_smooth, y1_smooth, 'g-', label = 'Validation')
+plt.title('Fine-Tuning - Training and Validation Loss')
+plt.legend(loc = 'upper right', fontsize = 9)
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.ylim(0,2)
+plt.show()
+```
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20FT%20Plot.PNG"></a>
