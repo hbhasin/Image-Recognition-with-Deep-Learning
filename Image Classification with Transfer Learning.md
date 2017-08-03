@@ -750,8 +750,8 @@ final.to_csv("csv/butterflies_with_pretrained_vgg19_model_ft_test.csv", index=Fa
 Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
 ----- | --------------- | -------------- | ------------ | ------------- | ------------------
 VGG16 | 0.86 | 0.92 | 0.36 | 0.59 | 0.88
-VGG19 | 0.86 | 1.0 | 0.19 | 0.5 | 0.90
-InceptionV3 | 1.0 | 0.97 | 0.87 | 0.88
+VGG19 | 0.86 | 0.86 | 0.19 | 0.5 | 0.90
+InceptionV3 | | 1.0 | 0.97 | 0.87 | 0.88
 Xception | 1.0 | 0.7 | 0.77 | 0.56
 
 ### Transfer Learning Training Time (HH:MM)
@@ -759,7 +759,7 @@ Xception | 1.0 | 0.7 | 0.77 | 0.56
 Model | Noodles Dataset | Leaves Dataset | Dogs Dataset | Birds Dataset | Butterflies Dataset
 ----- | --------------- | -------------- | ------------ | ------------- | ------------------
 VGG16 | 1:40 | 0:38 | 1:21 | 1:14 | 2:02
-VGG19 | 2:01 | 0:44 | 1:50 | 1:30 | 2:25
+VGG19 | 2:01 | 2:01 | 1:50 | 1:30 | 2:25
 InceptionV3 | | 0:52 | 0:29 | 1:08
 Xception | 1:15 | 0:51 | 2:00 | 1:57
 
