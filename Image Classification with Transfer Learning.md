@@ -550,7 +550,7 @@ plt.show()
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20TL%20Plot.PNG"></a>
 
-### Predicting Unseen Images
+### Predict Unseen Images
 The model.predict function generates output predictions for the input images which are retrieved from the dataset's test folder.
 
 ```
@@ -706,3 +706,40 @@ plt.show()
 ```
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20FT%20Results.PNG"></a>
 
+### Predict Unseen Images
+The model.predict function generates output predictions for the input images which are retrieved from the dataset's test folder.
+
+```
+num_images = len(glob.glob("butterflies_test/*.jpg"))
+predict_files = glob.glob("butterflies_test/*.jpg")
+
+im = cv2.imread(predict_files[0])
+im = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
+im = cv2.resize(im, (256, 256)).astype(np.float32)
+im = np.expand_dims(im, axis = 0)/255
+
+predictor, image_id = [], []
+for i in predict_files:
+    im = cv2.imread(i)
+    im = cv2.resize(cv2.cvtColor(im, cv2.COLOR_BGR2RGB), (256, 256)).astype(np.float32) / 255.0
+    im = np.expand_dims(im, axis =0)
+    outcome = [np.argmax(model.predict(im))]
+    predictor.extend(list(outcome))
+    image_id.extend([i.rsplit("\\")[-1]])
+    
+final = pd.DataFrame()
+final["id"] = image_id
+final["Butterfly"] = predictor
+
+classes = train_generator.class_indices
+classes = {value : key for key, value in classes.items()}
+
+final["Butterfly"] = final["Butterfly"].apply(lambda x: classes[x])
+final.head(num_images)
+```
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20TL%20Results.PNG"></a>
+
+### Save the Prediction Results
+```
+final.to_csv("csv/butterflies_with_pretrained_vgg19_model_tl_test.csv", index=False)
+```
