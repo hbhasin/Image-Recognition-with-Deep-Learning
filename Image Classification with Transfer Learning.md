@@ -760,6 +760,7 @@ final.head(num_images)
 final.to_csv("csv/butterflies_with_pretrained_vgg19_model_ft_test.csv", index=False)
 ```
 ## Summary of Test Results
+The table below shows the the test accuracies, training times and the dataset image sizes for all the datasets used in this project. The highlighted cells indicate no improvement or loss in test accuracy from Transfer Learning to Fine Tuning.
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Test%20Results.PNG"></a>
 
