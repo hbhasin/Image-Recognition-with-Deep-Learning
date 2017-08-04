@@ -96,7 +96,7 @@ The purpose behind performing a quick checkout on the ImageNet pre-trained model
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02_Initial_Checkout_Results.PNG"></a> 
 
 ### Summary of Quick Checkout on ImageNet pre-trained Models
-**Noodles**: Except for VGG19's top prediction was "Plate" when attempting to recognize Fried Noodles sample image, it next best prediction was "Carbonara" which lined up well with the rest of the models.
+**Noodles**: Except for VGG19's top prediction being a "Plate" when attempting to recognize Fried Noodles sample image, it next best prediction was "Carbonara" which lined up well with the rest of the models.
 
 **Leaves**: The Leaves dataset was deliberately chosen for this project because the leaves were laid against different backgrounds to complicate the recognition task. As expected, all the models were not able to identify them satisfactorily.
 
