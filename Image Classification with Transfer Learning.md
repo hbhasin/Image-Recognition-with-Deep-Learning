@@ -76,145 +76,31 @@ The purpose behind performing a quick checkout on the ImageNet pre-trained model
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
 
-Top Prediction | VGG16 - Fried Noodles | VGG16 - Noodle Soup | VGG19- Fried Noodles | VGG19 - Noodle Soup
--------------- | --------------- | ------------- | --------------- | -------------
-Carbonara | 0.61 | |
-Soup Bowl | | 0.51 | | 0.55
-Plate     | | |0.54 |
-
-Top Prediction | InceptionV3 - Fried Noodles | InceptionV3 - Noodle Soup | Xception- Fried Noodles | Xception - Noodle Soup
--------------- | --------------- | ------------- | --------------- | -------------
-Carbonara | 0.81 | | 0.73
-Soup Bowl | | 0.75 | | 0.62
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG"></a>
 
-Top Prediction | VGG16 - Leaf 01 | VGG16 - Leaf 02 | VGG16- Leaf 03 | VGG19 - Leaf 01 | VGG19 - Leaf 02 | VGG19 - Leaf 03
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Crossword Puzzle | 0.61 | |
-Lacewing | | 0.24 | | | 0.30
-Tray     | | | 0.23 |
-Picket Fence | | | | 0.09 | | |
-Envelope | | | | | | 0.096
-
-Top Prediction | InceptionV3 - Leaf 01 | InceptionV3 - Leaf 02 | InceptionV3- Leaf 03 | Xception - Leaf 01 | Xception - Leaf 02 | Xception - Leaf 03
--------------- | --------------- | ------------- | --------------- | ------------- | ----- | ----- |
-Computer Keyboard | 0.81 | | | 0.73
-Pot | | 0.19 | 0.1
-Head Cabbage | | | | | 0.1
-Packet | | | | | | 0.05
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs-Initial Checkout-xls.PNG"></a>
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01%20-%20Initial%20Checkout.PNG"></a>
 
-Top Prediction | VGG16 - Common Yellowthroat | VGG16 - Winter Wren | VGG16 - Pine Warbler | VGG16 - Common Yellowthroat | VGG16 - Winter Wren | VGG16 - Pine Warbler
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Gold Finch | 0.95 | | | 0.8
-Water Ouzel | | 0.36 | | | 0.66
-Jay | | | 0.39 | | |
-Litte Blue Heron | | | | | | 0.49
-
-Top Prediction | InceptionV3 - Common Yellowthroat | InceptionV3 - Winter Wren | InceptionV3 - Pine Warbler | Xception - Common Yellowthroat | Xception - Winter Wren | Xception - Pine Warbler
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Bee Eater | 0.78
-House Finch | | 0.22
-Brambling | | | 0.37 | | | 0.49
-Robin | | | | 0.53
-Water Ouzel | | | | | 0.4
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02%20-%20Initial%20Checkout.PNG"></a>
 
-Top Prediction | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican | VGG16 - Sage Thrasher | VGG16 - Lincoln Sparrow | VGG16 - Brown Pelican
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Hummingbird | 0.35
-Ruffed Grouse | | 0.27 | | | 0.56
-Limpkin | | | 0.84 | | | 0.43
-Redshank | | | | 0.53
-
-Top Prediction | InceptionV3 - Sage Thrasher | InceptionV3 - Lincoln Sparrow | InceptionV3 - Brown Pelican | Xception - Sage Thrasher | Xception - Lincoln Sparrow | Xception - Brown Pelican
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Bulbul | 0.29
-Bittern | | 0.31 | | 0.56
-Pelican | | | 0.64 | | | 0.56
-Humminbird | | | | 0.29
-Ruffed Grouse | | | | | 0.22
-
-Top Prediction | VGG16 - Green Jay | VGG16 - Eared Grebe | VGG16 - Pelagic Cormorant | VGG19 - Green Jay | VGG19 - Eared Grebe | VGG19 - Pelagic Cormorant
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Toucan | 0.81
-American Coot | | 0.74 | | 0.35
-Black Stork | | | 0.18
-Goldfinch | | | | 0.73
-Red-breasted Merganser | | | 0.4
-Water Ouzel | | | | | | 0.33
-
-Top Prediction | InceptionV3 - Green Jay | InceptionV3 - Eared Grebe | InceptionV3 - Pelagic Cormorant | Xception - Green Jay | Xception - Eared Grebe | Xception - Pelagic Cormorant
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Jay | 0.19 | | | 0.33
-European Gallinule | | 0.35
-American Coot | | | 0.35 | | 0.12
-Black Grouse | | | | | | 0.26
-
-Top Prediction | VGG16 - Black-footed Albatross | VGG19 - Black-footed Albatross
--------------- | --------------- | ------------- 
-Albatross | 0.99 | 0.98
-
-Top Prediction | InceptionV3 - Black-footed Albatross | Xception - Black-footed Albatross
--------------- | --------------- | ------------- 
-Albatross | 0.68 | 0.82
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01%20-%20Initial%20Checkout.PNG"></a>
 
-Top Prediction | VGG16 - Heliconius Erato | VGG16 - Heliconius Charitonius | VGG16 - Junonia Coenia | VGG19 - Heliconius Erato | VGG19 - Heliconius Charitonius | VGG19 - Junonia Coenia
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Admiral | 0.53 | | | 0.63
-Bee | | 0.25 | | | 0.23
-Ringlet | | | 0.97 | | | 0.98
-
-Top Prediction | InceptionV3 - Heliconius Erato | InceptionV3 - Heliconius Charitonius | InceptionV3 - Junonia Coenia | Xception - Heliconius Erato | Xception - Heliconius Charitonius | Xception - Junonia Coenia
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Admiral | 0.82 | | | 0.81
-Sulphur Butterfly | | 0.8
-Ringlet | | | 0.98 | |0.39 | 0.53
-
-Top Prediction | VGG16 - Danaus Plexippus | VGG16 - Lycaena Phlaeas | VGG16 - Nymphalis Antiopa | VGG19 - Danaus Plexippus | VGG16 - Lycaena Phlaeas | VGG16 - Nymphalis Antiopa
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Monarch | 0.99 | | | 0.99
-Lycaenid | | 0.56
-Admiral | | | 0.99 | | | 0.97
-Ringlet | | | | | 0.58
-
-Top Prediction | InceptionV3 - Danaus Plexippus | InceptionV3 - Lycaena Phlaeas | InceptionV3 - Nymphalis Antiopa | Xception - Danaus Plexippus | InceptionV3 - Lycaena Phlaeas | InceptionV3 - Nymphalis Antiopa
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Monarch | 0.96 | | | 0.92
-Lycaenid | | | | | | 0.31
-Admiral | | | 0.71 | | |
-Ringlet | | 0.46 | | | 0.55
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02%20-%20Initial%20Checkout.PNG"></a>
 
-Top Prediction | VGG16 - Papilo Cresphontes | VGG16 - Pieris Rapae | VGG16 - Vanessa Atalanta | VGG19 - Papilo Cresphontes | VGG19 - Pieris Rapae | VGG19 - Vanessa Atalanta
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-King Snake | 0.32
-Cabbage Butterfly | | 0.99 | | | 0.99
-Admiral | | | 0.99 | | | 0.99
-Black and Gold Garden Spider | | | | 0.36
-
-Top Prediction | InceptionV3 - Papilo Cresphontes | InceptionV3 - Pieris Rapae | InceptionV3 - Vanessa Atalanta | Xception - Papilo Cresphontes | Xception - Pieris Rapae | Xception - Vanessa Atalanta
--------------- | --------------- | ------------- | --------------- | ------------- | --------- | --------- |
-Admiral | 0.89 | | 0.95 | 0.33 | | 0.94
-Cabbage Butterfly | | 0.91 | | | 0.96
-
-Top Prediction | VGG16 - Vanessa Cardui | VGG19 - Vanessa Cardui
--------------- | --------------- | -------------
-Admiral | 0.66 | 0.63
-
-Top Prediction | InceptionV3 - Vanessa Cardui | Xception - Vanessa Cardui
--------------- | --------------- | -------------
-Monarch | 0.47 | 0.66
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02_Initial_Checkout_Results.PNG"></a> 
 
 ### Summary of Quick Checkout on Keras ImageNet pre-trained Models
 
