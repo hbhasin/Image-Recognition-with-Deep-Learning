@@ -479,7 +479,8 @@ In the Fine Tuning phase some or none of the lower convolutional layers of the m
 ### Train Layers, Compile Model, Fit Model
 In the fine tuning mode.compile function, the optimizer used was Stochastic Gradient Descent (SGD) with a learning rate of 0.0001 and a momentum of 0.9.
 ```
-# Step 1 - Set up fine tuning on pre-trained ImageNet vgg19 model - train all lower 94 layers
+# Step 1 - Set up fine tuning on pre-trained ImageNet vgg19 model - train all layers for VGG16 and VGG19 models but only the Layers from
+# 94 and above for the Inception V3 and Xception models
 for layer in model.layers:
     layer.trainable = True
     
@@ -633,3 +634,22 @@ The table below shows the the test accuracies, training times and the dataset im
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Test%20Results.PNG"></a>
 
+### Transfer Learning
+**Noodles Dataset**: All four models achieved greater than 85% test accuracy with the Xception model performing the best at 100%.
+
+**Leaves Dataset**: Three of the four models achieved gretaer than 91% test accuracy with the VGG model performing the best at 100% and the Inception V3 model coming in second best at 97.3%. The Xception model that performed superbly on the Noodles dataset was only capable of achieving 70.3%.
+
+**Dogs Dataset**: The VGG16 and VGG19 models had a very difficult time with this dataset - 18.8% for VGG19 and 35.9% for VGG16. The Inception V3 model performed the best with 87% followed by the Xception model with 76.6%.
+
+**Birds Dataset**: Again, the VGG16 and VGG19 models performed poorly on the dataset at 20%. The Inception V3 performed slightly better at 40% and the Xception model maxed out at 60%.
+
+**Butterflies Dataset**: All four models achieved greater than 87% test accuracy with both the Inception V3 and the Xception models performing the best at 100%.
+
+### Fine Tuning
+**Noodles Dataset**: Both the VGG16 and the Inception V3 models benefited from fine tuning. The VGG16 model increased its accuracy from 85.7% to 93.8% and the Inception V3 model from 85.7% to 90.6%. On the other hand, both the VGG19 and the Xception models saw a degradation in test accuracy. The VGG19 model's accuracy dropped from 85.7% to 78.1% and the Xception model reported a drop from 100% to 84.4%.
+
+**Leaves Dataset**: Both the VGG16 and the Xception models benefited from fine tuning. The VGG16 model increased its accuracy from 91.9% to 100% and the Xception model from 70.3% to 81.1%. On the other hand, both the VGG19 and the Inception V3 models saw a degradation in test accuracy. The VGG19 model's accuracy dropped from 100% to 97.3% and the Inception V3 model reported a drop from 97.3% to 94.6%.
+
+**Dogs Dataset**: Three of the four models benefited significantly from fine tuning. The VGG16 model reported an improvement from 35.9% to 63%. The VGG19 model reported an increase from 18.8% to 68.1%, a huge improvement. Similarly, the Xception model witnessed an improvement from 76.6% to 97.8%. Only the Inception V3 model saw a slight reduction in test accuracy from 87% to 84.8%.
+
+**Birds Dataset**: 
