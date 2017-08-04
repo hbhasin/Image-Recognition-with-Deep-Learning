@@ -652,4 +652,6 @@ The table below shows the the test accuracies, training times and the dataset im
 
 **Dogs Dataset**: Three of the four models benefited significantly from fine tuning. The VGG16 model reported an improvement from 35.9% to 63%. The VGG19 model reported an increase from 18.8% to 68.1%, a huge improvement. Similarly, the Xception model witnessed an improvement from 76.6% to 97.8%. Only the Inception V3 model saw a slight reduction in test accuracy from 87% to 84.8%.
 
-**Birds Dataset**: 
+**Birds Dataset**: Two of the four models benefited significantly from fine tuning. The VGG16 model improved from 20% to 59.4% and the Inception V3 model from 40% to 75%, an almost three-fold improvement. The VGG19 model doubled its test accuracy from 20% to 43.8%. The Xception model improved the least among the four models from 60% to 68.8%.
+
+**Butterflies Dataset**: All four models either improved or reported no change in their test accuracies. Both the VGG16 and VGG19 models witnessed an improvement, from 87.5 to 96.9% for the VGG16 model and from 90.6% to 100% for the VGG19 model. Both the Inception V3 and the Xception models reported no change in their test accuracies at 100%.
