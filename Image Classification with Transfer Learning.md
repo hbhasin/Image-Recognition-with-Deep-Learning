@@ -62,10 +62,10 @@ As a comparison, a simple one convolutional layer model was built to train and v
 
 The purpose behind performing a quick checkout on the ImageNet pre-trained models was to determine if fine-tuning would be needed in addition to transfer learning using the following rationale recommended in the [CS231n Stanford Convolutional Neural Networls for Visual  Recognition](http://cs231n.github.io/transfer-learning/):
 
-1. New dataset is small and similar to original dataset: Since the data is small, it is not a good idea to fine-tune the ConvNet due to overfitting concerns. Since the data is similar to the original data, the higher-level features in the ConvNet are expected to be relevant to this dataset as well. Hence, the best idea might be to train a linear classifier on the Convolutional Neural Network (CNN) codes.
-2. New dataset is large and similar to the original dataset. Since there is more data, a higher level of confidence is expected that there would be no overfitting when attempting to fine-tune through the full network.
-3. New dataset is small but very different from the original dataset. Since the data is small, it is likely best to only train a linear classifier. Since the dataset is very different, it might not be best to train the classifier form the top of the network, which contains more dataset-specific features. Instead, it might work better to train the Support Vector Machine (SVM) classifier from activations somewhere earlier in the network.
-4. New dataset is large and very different from the original dataset. Since the dataset is very large, it would be expected to train a ConvNet from scratch. However, in practice it is very often still beneficial to initialize with weights from a pretrained model. In this case, there would be enough data and confidence to fine-tune through the entire network.
+1. **New dataset is small and similar to original dataset**: Since the data is small, it is not a good idea to fine-tune the ConvNet due to overfitting concerns. Since the data is similar to the original data, the higher-level features in the ConvNet are expected to be relevant to this dataset as well. Hence, the best idea might be to train a linear classifier on the Convolutional Neural Network (CNN) codes.
+2. **New dataset is large and similar to the original dataset**: Since there is more data, a higher level of confidence is expected that there would be no overfitting when attempting to fine-tune through the full network.
+3. **New dataset is small but very different from the original dataset**: Since the data is small, it is likely best to only train a linear classifier. Since the dataset is very different, it might not be best to train the classifier form the top of the network, which contains more dataset-specific features. Instead, it might work better to train the Support Vector Machine (SVM) classifier from activations somewhere earlier in the network.
+4. **New dataset is large and very different from the original dataset**: Since the dataset is very large, it would be expected to train a ConvNet from scratch. However, in practice it is very often still beneficial to initialize with weights from a pretrained model. In this case, there would be enough data and confidence to fine-tune through the entire network.
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
 
@@ -96,6 +96,15 @@ The purpose behind performing a quick checkout on the ImageNet pre-trained model
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02_Initial_Checkout_Results.PNG"></a> 
 
 ### Summary of Quick Checkout on ImageNet pre-trained Models
+**Noodles**: Except for VGG19's top prediction was "Plate" when attempting to recognize Fried Noodles sample image, it next best prediction was "Carbonara" which lined up well with the rest of the models.
+
+**Leaves**: The Leaves dataset was deliberately chosen for this project because the leaves were laid against different backgrounds to complicate the recognition task. As expected, all the models were not able to identify them satisfactorily.
+
+**Dogs**: All the models were able to recognize the sample images as dogs, though not ncessarily the correct breed. These results were expected as much data have been published on the use of pretrained ImageNet models to identify dogs versus cats.
+
+**Birds**: Similarly, all the models were able to recognize the sample images as birds, though not ncessarily the correct breed.
+
+**Butterflies**: The Inception and Xception models recognized all the sample images as some kind of butterflies. The VGG16 and VGG19 models identified the Heliconius Charitonius butterfly to be a bee. The VGG16 model identified the Papilo Cresphontes butterfly to be king snake and the VGG19 model identified it to be a black and golde garden spider.
 
 ## Hardware Details
 Training Deep Learning networks require tremendous processing power to handle multiple matrix multiplications. GPUs are  ideal for performing these operations.  Facebook recently reported that its scientits were able to train nearly 1.3 million images in under one hour using [256 Tesla P100 GPUs](https://news.developer.nvidia.com/facebook-trains-imagenet-in-1-hour/) that previously took days on a single system. In 2012 the ImageNet ILSVRC model was trained on 1.2 million images over the period of 2–3 weeks across multiple GPUs. For the small datasets used in this project having a Titan GTX 1080 GPU would have been able to train 8X faster than an i7 Intel CPU running at 3.5GHz.
