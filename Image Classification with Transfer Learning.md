@@ -43,7 +43,7 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 -  Xception
 
 
-This study used the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains.
+This study used the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains using Transfer Learning and Fine Tuning.
 
 ## Training, Validating and Testing Datasets Process
 The following steps were used in to train, validate and test the datasets in this project:
@@ -724,7 +724,7 @@ The table below shows the the test accuracies, training times and the dataset im
 ### Transfer Learning
 **Noodles Dataset**: All four models achieved greater than 85% test accuracy with the Xception model performing the best at 100%.
 
-**Leaves Dataset**: Three of the four models achieved gretaer than 91% test accuracy with the VGG model performing the best at 100% and the Inception V3 model coming in second best at 97.3%. The Xception model that performed superbly on the Noodles dataset was only capable of achieving 70.3%.
+**Leaves Dataset**: Three of the four models achieved greater than 91% test accuracy with the VGG model performing the best at 100% and the Inception V3 model coming in second best at 97.3%. The Xception model that performed superbly on the Noodles dataset was only capable of achieving 70.3%.
 
 **Dogs Dataset**: The VGG16 and VGG19 models had a very difficult time with this dataset - 18.8% for VGG19 and 35.9% for VGG16. The Inception V3 model performed the best with 87% followed by the Xception model with 76.6%.
 
@@ -746,4 +746,12 @@ The table below shows the the test accuracies, training times and the dataset im
 **The test results also showed that all the Transfer Learning pre-trained models performed better than the one-layer and the six-layer CNN models, both in validation accuracy and training times.**
 
 ### Transfer Learning versus Fine Tuning Discussion
-Model training times for Fine Tuning were expected to take longer than the ones used in Transfer Learning. 
+Model training times for Fine Tuning were expected to take longer than the ones used in Transfer Learning. Fine tuning was only recommended for small datasets that were different from the original dataset, i.e., the pre-trained ImageNet models were not able to identify random samples with reasonable confidence. The Leaves dataset was the only dataset among the four datasets that had this issue. Yet, during the Transfer Learning stage, three of the four models achieved gretaer than 91% test accuracy with the VGG model performing the best at 100% and the Inception V3 model coming in second best at 97.3%. The Xception model that performed superbly on the Noodles dataset was only capable of achieving 70.3%. The Xception model did improve its accuracy by 10.8% with an additional 1:06 hours of extra training.
+
+Conversely, the Dogs and Birds datasets did not perform well in the Transfer Learning phase even though the pre-trained models were able to identify the random samples as dogs and birds but not necessarily the correct breeds. Hence, these datasets were subjected to fine tuning and the test accuracies did improve.
+
+## Next Steps
+1. This study showed that pre-trained ImageNet CNN models, such as the VGG16, VGG19, Inception V3 and Xception models can be exploited for use as image classifiers on different, but related datasets.
+2. The GPU available for use in this study was the Nvidia GeForce GTX470 did not meet the minimum [Compute Unified Device Architecture](https://blogs.nvidia.com/blog/2012/09/10/what-is-cuda-2/) (CUDA) compute capability of 3.0 for it to be used to reduce training times. As an alternative, [Amazon Web Services (AWS) EC2](https://aws.amazon.com/ec2/) and [Google Cloud Platform](https://cloud.google.com/) offer Virtual Machines (VM) with multiple GPU support for use in deep learning proejcts.
+3. [ResNet50](https://arxiv.org/abs/1512.03385) is the CNN model that the Microsoft team that won the [Large Scale Visual Recognition Challenge](http://image-net.org/challenges/LSVRC/2015/) (ILSRVC) 2015 competetion and surpassed the human performance on the ImageNet dataset. However, it failed to perform as well as any of the other four models used in this project. This needs to be further investigated.
+4. A potential use of 
