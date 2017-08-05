@@ -634,7 +634,7 @@ A sequential six-layer CNN model was built, trained and validated on the two-cla
 
 ```
 # define the model
-def covnet_model():
+def convnet_model():
     model = Sequential()
 
     model.add(Conv2D(32, (3, 3), padding='same',
