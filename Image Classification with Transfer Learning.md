@@ -40,8 +40,7 @@ The [Keras](https://keras.io/applications/#usage-examples-for-image-classificati
 -  [Inception V3](https://arxiv.org/abs/1512.00567) - 
 
 -  [ResNet50](https://arxiv.org/abs/1512.03385) – A residual learning framework that eases the training of deep networks. It reformulates the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions.
--  Xception
-
+-  [Xception](https://arxiv.org/abs/1610.02357) - Xception is an extension of the Inception architecture which replaces the standard Inception modules with depthwise separable convolutions.
 
 This study used the Keras library to explore ImageNet’s pre-trained VGG16, VGG19, Inception V3 and Xception models to perform image classification on a variety of small datasets with different domains using Transfer Learning and Fine Tuning.
 
