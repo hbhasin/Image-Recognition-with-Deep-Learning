@@ -56,7 +56,7 @@ The following steps were used in to train, validate and test the datasets in thi
 6. Evaluate Model
 7. Test Model
 
-As a comparison, a simple one convolutional layer model was built to train and validate the two-class (Fried Noodles and Noodle Soup) image classifier and check it against the pre-trained models on training time and accuracy.
+As a comparison, a six layer convolutional model was built to train and validate the two-class (Fried Noodles and Noodle Soup) image classifier and check it against the pre-trained models on training time and accuracy.
 
 ## Quick Checkout on Keras ImageNet pre-trained Models
 
@@ -114,7 +114,6 @@ Training Deep Learning networks require tremendous processing power to handle mu
 However, no GPU was available for this project so the datasets were trained on two systems with Core i7 CPUs and on two systems with Core i5 CPUs.
 
 ## Code Details
-
 The following code applies to all the Keras pre-trained models except as noted otherwise.
 
 ## Transfer Learning Phase
@@ -629,6 +628,53 @@ final.head(num_images)
 ```
 final.to_csv("csv/butterflies_with_pretrained_vgg19_model_ft_test.csv", index=False)
 ```
+
+## Six-layer Convolutional Neural Network (CNN) Model
+A sequential six-layer CNN model was built, trained and validated on the two-class Noodles dataset. The average training time for one epoch took 2.8 hours on an Intel Core i7 CPU 3.2GhHz with 16GB RAM. Hence, only five epochs were performed. The model attained 61.7% test validation accuracy at the end of the fifth epoch.
+
+```
+# define the model
+def covnet_model():
+    model = Sequential()
+
+    model.add(Conv2D(32, (3, 3), padding='same',
+                    input_shape=(3, img_width, img_height),
+                    activation='relu'))
+    model.add(Conv2D(32, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    model.add(Conv2D(64, (3, 3), padding='same',
+                    activation='relu'))
+    model.add(Conv2D(64, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    model.add(Conv2D(128, (3, 3), padding='same',
+                    activation='relu'))
+    model.add(Conv2D(128, (3, 3), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Dropout(0.2))
+
+    model.add(Flatten())
+    model.add(Dense(512, activation='relu'))
+    model.add(Dropout(0.5))
+    model.add(Dense(num_classes, activation='softmax'))
+    return model
+```
+```
+Epoch 1/5
+240/240 [==============================] - 10113s - loss: 0.6345 - acc: 0.6354 - val_loss: 0.7838 - val_acc: 0.5294
+Epoch 2/5
+240/240 [==============================] - 10044s - loss: 0.5645 - acc: 0.7119 - val_loss: 0.7600 - val_acc: 0.5590
+Epoch 3/5
+240/240 [==============================] - 10203s - loss: 0.5811 - acc: 0.6991 - val_loss: 0.7712 - val_acc: 0.5851
+Epoch 4/5
+240/240 [==============================] - 10318s - loss: 0.4906 - acc: 0.7728 - val_loss: 0.8033 - val_acc: 0.6004
+Epoch 5/5
+240/240 [==============================] - 10052s - loss: 0.5066 - acc: 0.7581 - val_loss: 0.8434 - val_acc: 0.6170
+```
+
 ## Summary of Test Results
 The table below shows the the test accuracies, training times and the dataset image sizes for all the datasets used in this project. The highlighted cells indicate no improvement or loss in test accuracy from Transfer Learning to Fine Tuning.
 
