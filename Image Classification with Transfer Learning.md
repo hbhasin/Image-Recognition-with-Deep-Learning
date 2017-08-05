@@ -629,8 +629,49 @@ final.head(num_images)
 final.to_csv("csv/butterflies_with_pretrained_vgg19_model_ft_test.csv", index=False)
 ```
 
+## One-layer Convolutional Neural Network (CNN) Model
+A simple one-layer CNN model was built, trained and validated on the two-class Noodles dataset. The average training time for one epoch took 33 minutes on an Intel Core i7 CPU @ 3.40GhHz system with 16GB RAM. Ten epochs were performed and the model attained 54.6% test validation accuracy at the end of the tenth epoch.
+```
+def cnn_model():
+    model = Sequential()
+    model.add(Conv2D(32, (3, 3), padding='same',
+                    input_shape=(img_width, img_height, 3),
+                    activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2)))
+    model.add(Flatten())
+    model.add(Dense(1024, activation='relu'))
+    model.add(Dropout(0.5))
+    model.add(Dense(num_classes, activation='softmax'))
+    return model
+```
+```
+Epoch 1/10
+251/251 [==============================] - 2018s - loss: 7.1477 - acc: 0.5552 - val_loss: 7.2660 - val_acc: 0.5492
+Epoch 2/10
+251/251 [==============================] - 2029s - loss: 7.2117 - acc: 0.5526 - val_loss: 7.2686 - val_acc: 0.5490
+Epoch 3/10
+251/251 [==============================] - 1988s - loss: 7.1967 - acc: 0.5535 - val_loss: 7.2686 - val_acc: 0.5490
+Epoch 4/10
+251/251 [==============================] - 2009s - loss: 7.1848 - acc: 0.5542 - val_loss: 7.2493 - val_acc: 0.5502
+Epoch 5/10
+251/251 [==============================] - 1939s - loss: 7.1903 - acc: 0.5539 - val_loss: 7.2975 - val_acc: 0.5472
+Epoch 6/10
+251/251 [==============================] - 1939s - loss: 7.1996 - acc: 0.5533 - val_loss: 7.2782 - val_acc: 0.5484
+Epoch 7/10
+251/251 [==============================] - 1925s - loss: 7.1875 - acc: 0.5541 - val_loss: 7.2589 - val_acc: 0.5496
+Epoch 8/10
+251/251 [==============================] - 1929s - loss: 7.1911 - acc: 0.5538 - val_loss: 7.2493 - val_acc: 0.5502
+Epoch 9/10
+251/251 [==============================] - 1933s - loss: 7.1915 - acc: 0.5538 - val_loss: 7.3071 - val_acc: 0.5467
+Epoch 10/10
+251/251 [==============================] - 1920s - loss: 7.2041 - acc: 0.5530 - val_loss: 7.3168 - val_acc: 0.5461
+Training time: 5:27:16.009156
+Test Score: 8.39957097551
+Test Accuracy: 0.478873239856
+```
+
 ## Six-layer Convolutional Neural Network (CNN) Model
-A sequential six-layer CNN model was built, trained and validated on the two-class Noodles dataset. The average training time for one epoch took 2.8 hours on an Intel Core i7 CPU 3.2GhHz with 16GB RAM. Hence, only five epochs were performed. The model attained 61.7% test validation accuracy at the end of the fifth epoch.
+A sequential six-layer CNN model was built, trained and validated on the two-class Noodles dataset. The average training time for one epoch took 2.8 hours on an Intel Core i7 CPU @ 3.40GhHz system with 16GB RAM. Hence, only five epochs were performed. The model attained 61.7% test validation accuracy at the end of the fifth epoch.
 
 ```
 # define the model
