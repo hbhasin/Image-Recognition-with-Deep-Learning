@@ -527,7 +527,7 @@ Epoch 20/20
 592/592 [==============================] - 1155s - loss: 0.0071 - acc: 0.9983 - val_loss: 0.0674 - val_acc: 0.9704
 Training time: 6:14:59.254681
 ```
-### Evaluate Model
+### Evaluate the Model
 ```
 # evaluate the performance the new model and report the results
 score = model.evaluate_generator(validate_generator, nb_validate_samples/batch_size)
