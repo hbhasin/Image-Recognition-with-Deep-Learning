@@ -748,6 +748,9 @@ Model training times for Fine Tuning were expected to take longer than the ones 
 
 Conversely, the Dogs and Birds datasets did not perform well in the Transfer Learning phase even though the pre-trained models were able to identify the random samples as dogs and birds but not necessarily the correct breeds. Hence, these datasets were subjected to fine tuning and the test accuracies did improve.
 
+## Resources
+There is a wealth of information on the Web related to Deep Learning and its related topics. The highly recommended courses on Visual Recognition are the [Stanford CS class CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/) and [Cousera's Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks). 
+
 ## Next Steps
 1. This study showed that pre-trained ImageNet CNN models, such as the VGG16, VGG19, Inception V3 and Xception models can be exploited for use as image classifiers on different, but related datasets. The [Caffe Model Zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo) has several pretrained models available for use on different datasets which could add additional value to this project.
 2. The GPU available for use in this study was the Nvidia GeForce GTX470 and did not meet the minimum [Compute Unified Device Architecture](https://blogs.nvidia.com/blog/2012/09/10/what-is-cuda-2/) (CUDA) compute capability of 3.0 for it to be used to reduce training times. As an alternative, [Amazon Web Services (AWS) EC2](https://aws.amazon.com/ec2/), [Google Cloud Platform](https://cloud.google.com/) and [Paperspace](https://www.paperspace.com/ml) offer Virtual Machines (VM) with multiple GPU support for use in deep learning proejcts.
