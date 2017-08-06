@@ -37,8 +37,7 @@ There are several libraries in use today that support deep learning. Each has it
 The [Keras](https://keras.io/applications/#usage-examples-for-image-classification-models) Deep Learning library for Python currently supports five models that have been pre-trained on ImageNet:
 -  [VGG16](https://arxiv.org/abs/1409.1556) – A  convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper “Very Deep Convolutional Networks for Large-Scale Image Recognition”. 
 -  VGG19 – It is essentially the VGG16 model with three additional weight layers.
--  [Inception V3](https://arxiv.org/abs/1512.00567) - 
-
+-  [Inception V3](https://arxiv.org/abs/1512.00567) - A  convolutional neural network model from Google to scale up networks in ways that aim at utilizing the added computation as efficiently as possible by suitably factorized convolutions and aggressive regularization.
 -  [ResNet50](https://arxiv.org/abs/1512.03385) – A residual learning framework that eases the training of deep networks. It reformulates the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions.
 -  [Xception](https://arxiv.org/abs/1610.02357) - Xception is an extension of the Inception architecture which replaces the standard Inception modules with depthwise separable convolutions.
 
