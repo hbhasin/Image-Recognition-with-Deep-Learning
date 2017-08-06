@@ -10,15 +10,15 @@ The following project files are located in this project directory:
 
 [Image Classification with Deep Learning Capstone Project Proposal](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/Image%20Recognition%20with%20Deep%20Learning%20Capstone%20Project%20Proposal.pdf) - Project Proposal.
 
-[Initial checkout with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg16.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg16_V2.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Initial checkout with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg19.ipynb) - Uses a Keras ImageNet pre-trained VGG19 model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained VGG19 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg19_V2.ipynb) - Uses a Keras ImageNet pre-trained VGG19 model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Initial checkout with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_inception_v3.ipynb) - Uses a Keras ImageNet pre-trained Inception V3 model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained Inception V3 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_inception_v3_V2.ipynb) - Uses a Keras ImageNet pre-trained Inception V3 model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Initial checkout with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_xception.ipynb) - Uses a Keras ImageNet pre-trained Xception model to recognize one random sample from each of the datasets and provide the top five results.
+[Initial checkout with pre-trained Xception model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_xception_V2.ipynb) - Uses a Keras ImageNet pre-trained Xception model to recognize one random sample from each of the datasets and provide the top five results.
 
-[Two Classes (Noodles) - Image Classification with simple three layer Convolutional Neural Network](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_basic_convnet_model.ipynb) - Trains a simple three layer convolutional neural network to recognize fried noodles from noodle soup.
+[Two Classes (Noodles) - Image Classification with six layer Convolutional Neural Network](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_six_layer_convnet_model.ipynb) - Trains a six layer convolutional neural network to recognize fried noodles from noodle soup.
 
 [Two Classes (Noodles) - Dataset Train-Validate-Test Split](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/noodles_data_train_validate_test_split_V1.ipynb) - Splits the raw dataset into train, validate and test subsets. The validation dataset uses 20% of the raw dataset. The test dataset uses 10% of the remaining raw dataset and does not get used for training or validation.
 
