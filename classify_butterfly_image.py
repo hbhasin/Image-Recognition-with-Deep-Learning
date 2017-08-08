@@ -42,7 +42,8 @@ if args["model"] not in MODELS.keys():
 		"be a key in the 'MODELS' dictionary. "
 		"Choices are:\n" + "vgg16\n" + "vgg19\n" + "inception\n" + "xception")
 	sys.exit()
-if args["model"] not in MODELS.items():
+model_file = "butterflies_" + args["model"] + "_model_ft.h5"
+if os.path.exists(model_file) == False:
 	print(args["model"] + " model file is missing")
 	sys.exit()
 
