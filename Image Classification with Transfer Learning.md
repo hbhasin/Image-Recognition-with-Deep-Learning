@@ -743,7 +743,7 @@ The table below shows the the test accuracies, training times and the dataset im
 
 **Butterflies Dataset**: All four models either improved or reported no change in their test accuracies. Both the VGG16 and VGG19 models witnessed an improvement, from 87.5 to 96.9% for the VGG16 model and from 90.6% to 100% for the VGG19 model. Both the Inception V3 and the Xception models reported no change in their test accuracies at 100%.
 
-Overall, in training accuracy, the Inception V3 model performed the best with an average of 89% followed by Xception at 86.4%, VGG16 at 82.6% and VGG19 cominf in last at 77.5%.
+**Overall, in training accuracy, the Inception V3 model performed the best with an average of 89% followed by Xception at 86.4%, VGG16 at 82.6% and VGG19 coming in last at 77.5%.**
 
 **The test results also showed that all the Transfer Learning pre-trained models performed better than the one-layer and the six-layer CNN models, both in validation accuracy and training times.**
 
