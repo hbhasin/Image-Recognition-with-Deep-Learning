@@ -21,8 +21,10 @@ Vanessa Cardui
 
 
 ### Prerequisites
-1. download VGG16, VGG19, Inception V3, Xception trained models from https://drive.google.com/drive/folders/0B5V_P8iI1LUeMzBTQzlWLTZwVTg
-2. store the candidate butterfly image or images in the images folder
+1. Download VGG16, VGG19, Inception V3, Xception trained models from https://drive.google.com/drive/folders/0B5V_P8iI1LUeMzBTQzlWLTZwVTg
+2. Store the candidate butterfly image or images in the images folder
+3. Install Keras Library version 1.2.2
+4. Install Tensorflow Library version 0.12
 
 ### Usage
 python classify_butterfly_image.py --image images/butterfly.jpg --model inception
