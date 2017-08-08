@@ -730,6 +730,8 @@ The table below shows the the test accuracies, training times and the dataset im
 
 **Butterflies Dataset**: All four models achieved greater than 87% test accuracy with both the Inception V3 and the Xception models performing the best at 100%.
 
+**Overall, in training accuracy, the Inception V3 model performed the best with an average of 82% followed by Xception at 81.3%, VGG16 at 64.2% and VGG19 at 63%.**
+
 ### Fine Tuning
 **Noodles Dataset**: Both the VGG16 and the Inception V3 models benefited from fine tuning. The VGG16 model increased its accuracy from 85.7% to 93.8% and the Inception V3 model from 85.7% to 90.6%. On the other hand, both the VGG19 and the Xception models saw a degradation in test accuracy. The VGG19 model's accuracy dropped from 85.7% to 78.1% and the Xception model reported a drop from 100% to 84.4%.
 
@@ -740,6 +742,8 @@ The table below shows the the test accuracies, training times and the dataset im
 **Birds Dataset**: Two of the four models benefited significantly from fine tuning. The VGG16 model improved from 20% to 59.4% and the Inception V3 model from 40% to 75%, an almost three-fold improvement. The VGG19 model doubled its test accuracy from 20% to 43.8%. The Xception model improved the least among the four models from 60% to 68.8%.
 
 **Butterflies Dataset**: All four models either improved or reported no change in their test accuracies. Both the VGG16 and VGG19 models witnessed an improvement, from 87.5 to 96.9% for the VGG16 model and from 90.6% to 100% for the VGG19 model. Both the Inception V3 and the Xception models reported no change in their test accuracies at 100%.
+
+Overall, in training accuracy, the Inception V3 model performed the best with an average of 89% followed by Xception at 86.4%, VGG16 at 82.6% and VGG19 cominf in last at 77.5%.
 
 **The test results also showed that all the Transfer Learning pre-trained models performed better than the one-layer and the six-layer CNN models, both in validation accuracy and training times.**
 
