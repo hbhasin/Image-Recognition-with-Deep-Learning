@@ -473,7 +473,7 @@ In the Fine Tuning phase some or none of the lower convolutional layers of the m
 
 
 
-### Train Layers, Compile Model, Fit Model
+### Determine Layers to train, Compile Model, Fit Model
 In the fine tuning mode.compile function, the optimizer used was Stochastic Gradient Descent (SGD) with a learning rate of 0.0001 and a momentum of 0.9.
 ```
 # Step 1 - Set up fine tuning on pre-trained ImageNet vgg19 model - train all layers for VGG16 and VGG19 models but only the Layers from
