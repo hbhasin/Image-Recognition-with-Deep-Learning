@@ -79,7 +79,7 @@ The purpose behind performing a quick checkout on the ImageNet pre-trained model
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01%20-%20Initial%20Checkout.PNG"></a>
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01_Initial_Checkout_Results.PNG"></a> 
+<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02_Initial_Checkout_Results.PNG"></a> 
 
 <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02%20-%20Initial%20Checkout.PNG"></a>
 
