@@ -28,4 +28,4 @@ Vanessa Cardui
 python classify_butterfly_image.py --image images/butterfly.jpg --model inception
 
 ### Disclaimer
-Since these models are specifically trained to classify the ten species listed above it is likely that if an image of a cat, say for example, is used for classification, the models may try to fit the image into one of the ten categories. The user is encouraged to provide candidate images that reflect any of these ten species. The Web has a wealth of images available for use to test these models out.
+Since these models are specifically trained to classify the ten species listed above it is likely that if an image of a cat, say for example, is used for classification, the models may try to fit the image into one of the ten categories. The user is encouraged to provide candidate images that ONLY reflect any of these ten species. The Web has a wealth of images available for use to test these models out.
