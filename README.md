@@ -1,4 +1,4 @@
-# Image-Classification-with-Deep-Learning
+# Image-Classification-with-Transfer-Learning
 
 ## Project Summary
 This project was undertaken to fulfill one of the two Capstone projects required by [SpringBoard.com](https://springboard.com). It explores the use of Transfer Learning in classifying a variety of images through the training and validating processes.
