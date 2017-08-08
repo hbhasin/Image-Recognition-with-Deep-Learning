@@ -1,5 +1,6 @@
 # USAGE
 # python classify_butterfly_image.py --image images/butterfly0.jpg --model inception
+# download models from https://drive.google.com/drive/folders/0B5V_P8iI1LUeMzBTQzlWLTZwVTg
 
 # import the necessary packages
 import os, sys
