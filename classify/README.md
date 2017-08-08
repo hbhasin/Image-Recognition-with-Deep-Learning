@@ -1,16 +1,26 @@
 ### Image Classification - Ten butterfly species:
 Danaus Plexippus
+
 Heliconius Charitonius
+
 Heliconius Erato
+
 Junonia Coenia
+
 Lycaena Phlaeas
+
 Nymphalis Antiopa
+
 Papilio Cresphontes
+
 Pieris Rapae
+
 Vanessa Atalanta
+
 Vanessa Cardui
 
-### Pre-requisites
+
+### Prerequisites
 1. download VGG16, VGG19, Inception V3, Xception trained models from https://drive.google.com/drive/folders/0B5V_P8iI1LUeMzBTQzlWLTZwVTg
 2. store the candidate butterfly image or images in the images folder
 
