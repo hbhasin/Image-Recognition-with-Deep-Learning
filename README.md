@@ -12,7 +12,7 @@ The following project files are located in this project directory:
 
 [Image Classification with Transfer Learning](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/Image%20Classification%20with%20Transfer%20Learning.md) - Final Project Report.
 
-[Slide Deck - Image Classification with Transfer Learning](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/Slide%20Deck%20-%20Image%20Classification%20with%20Transfer%20Learning.pptx) - Slide Deck.
+[Slide Deck - Image Classification with Transfer Learning](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/slide_deck/Slide%20Deck%20-%20Image%20Classification%20with%20Transfer%20Learning.pptm) - Slide Deck. It can also be retrieved via https://drive.google.com/drive/folders/0B5V_P8iI1LUeMzBTQzlWLTZwVTg.
 
 [Initial checkout with pre-trained VGG16 model](https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/initial_check_vgg16_V2.ipynb) - Uses a Keras ImageNet pre-trained VGG16 model to recognize one random sample from each of the datasets and provide the top five results.
 
