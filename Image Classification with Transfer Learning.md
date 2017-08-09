@@ -212,7 +212,7 @@ arguments of the ImageDataGenerator class as follows:
 
 **width_shift and height_shift** are ranges (as a fraction of total width or height) within which to randomly translate pictures vertically or horizontally
 
-**rescale** is a value by which we will multiply the data before any other processing. Our original images consist in RGB coefficients in the 0-255, but such values would be too high for our models to process (given a typical learning rate), so we target values between 0 and 1 instead by scaling with a 1/255. factor.
+**rescale** is a value by which the data is multiplied before any other processing. The original images consist of RGB coefficients in the 0-255, but such values would be too high for the models to process (given a typical learning rate), values are targeted between 0 and 1 instead by scaling with a 1/255. factor.
 
 **shear_range** is for randomly applying shearing transformations
 
