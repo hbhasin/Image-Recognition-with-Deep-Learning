@@ -54,7 +54,7 @@ The following steps were used in to train, validate and test the datasets in thi
 6. Evaluate Model
 7. Test Model
 
-As a comparison, a six layer convolutional model was built to train and validate the two-class (Fried Noodles and Noodle Soup) image classifier and check it against the pre-trained models on training time and accuracy.
+As a comparison, a one-layer and a six layer convolutional models were built to train and validate the two-class (Fried Noodles and Noodle Soup) image classifier and check them against the pre-trained models on training times and accuracies.
 
 ## Quick Checkout on Keras ImageNet pre-trained Models
 
@@ -102,7 +102,7 @@ The purpose behind performing a quick checkout on the ImageNet pre-trained model
 
 **Birds**: Similarly, all the models were able to recognize the sample images as birds, though not ncessarily the correct breed.
 
-**Butterflies**: The Inception and Xception models recognized all the sample images as some kind of butterflies. The VGG16 and VGG19 models identified the Heliconius Charitonius butterfly to be a bee. The VGG16 model identified the Papilo Cresphontes butterfly to be king snake and the VGG19 model identified it to be a black and golden garden spider.
+**Butterflies**: The Inception and Xception models recognized all the sample images as some kind of butterflies. The VGG16 and VGG19 models identified the Heliconius Charitonius butterfly to be a bee. The VGG16 model identified the Papilo Cresphontes butterfly to be a king snake and the VGG19 model identified it to be a black and golden garden spider.
 
 **These results indicated that the pre-trained ImageNet models were capable of being used for Transfer Learning on the noodles, dogs, birds and butterflies datasets without the need for Fine Tuning based on the recommendation above. On the other hand, Fine Tuning might be needed on the leaves dataset. For the purpose of this project both Transfer Learning and Fine Tuning were performed to analyze the results and compare the differences in training times and test accuracies.**
 
@@ -205,7 +205,7 @@ for r, dirs, files in os.walk(validate_dir):
         nb_validate_samples += len(glob.glob(os.path.join(r, dr + "/*")))
 ```
 ### Preprocessing and augmenting the Datasets
-Data preparation is almost always required when working with any data analysis, machine learning, neural networkk or deep learning models. It becomes even more important to augment data in the case of image recognition. Keras provides the [ImageDataGenerator](https://keras.io/preprocessing/image/) class that defines the configuration for image data preparation and augmentation. It defines the 
+Data preparation is almost always required when working with any data analysis, machine learning, neural network or deep learning models. It becomes even more important to augment data in the case of image recognition. Keras provides the [ImageDataGenerator](https://keras.io/preprocessing/image/) class that defines the configuration for image data preparation and augmentation. It defines the 
 arguments of the ImageDataGenerator class as follows:
 
 **rotation_range** is a value in degrees (0-180), a range within which to randomly rotate pictures
@@ -217,7 +217,7 @@ arguments of the ImageDataGenerator class as follows:
 **shear_range** is for randomly applying shearing transformations
 
 **zoom_range** is for randomly zooming inside pictures
-horizontal_flip is for randomly flipping half of the images horizontally --relevant when there are no assumptions of horizontal assymetry (e.g. real-world pictures).
+horizontal_flip is for randomly flipping half of the images horizontally, relevant when there are no assumptions of horizontal assymetry (e.g. real-world pictures).
 
 **fill_mode** is the strategy used for filling in newly created pixels, which can appear after a rotation or a width/height shift.
 
