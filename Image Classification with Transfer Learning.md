@@ -1,11 +1,16 @@
 # Image Classification with Transfer Learning
 
 Harpreet Bhasin
+
 July 31, 2017
 
 <p align="center"> 
 <img src= "https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG">
 </p>
+
+<div class="fig figcenter fighighlight">
+  <img src="/images/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG" width="100%">
+  <div class="figcaption">
 
 Deep Learning is an emerging field of research and Transfer Learning is one of its benefits. In image classification, for example, Transfer Learning makes use of features learned from one domain and used on another through feature extraction and fine-tuning. Convolutional Neural Network (also known as ConvNet) models trained on the [ImageNet's](http://www.image-net.org) million images with 1000 categories have been successfully used on other similar or dissimilar datasets, large or small, with great success. In particular, given the fact that data acquisition is expensive, small datasets can benefit from these pre-trained networks because the lower layers of these pre-trained networks already contain many generic features such as edge and color blob detectors and only the higher layers need to be trained on the new datasets.
 
