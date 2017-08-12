@@ -1,7 +1,6 @@
 # Image Classification with Transfer Learning
 
 Harpreet Bhasin
-
 July 31, 2017
 
 <p align="center"> 
