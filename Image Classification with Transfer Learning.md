@@ -1,5 +1,8 @@
 # Image Classification with Transfer Learning
 
+Harpreet Bhasin
+July 31, 2017
+
 <p align="center"> 
 <img src= "https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG">
 </p>
