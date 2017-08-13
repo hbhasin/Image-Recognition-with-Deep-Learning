@@ -6,6 +6,4 @@ url: "http://hbhasin.github.io"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-
 theme: jekyll-theme-modernist
