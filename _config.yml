@@ -1,2 +1,9 @@
-theme: jekyll-theme-slate
-set baseurl: /hbhasin
+# Site settings
+title: Image Recognition with Deep Learning
+description: "Blog"
+baseurl: ""
+url: "http://hbhasin.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
