@@ -4,6 +4,8 @@ Harpreet Bhasin
 
 July 31, 2017
 
+![]({{site.baseurl}}/https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/splash.JPG)
+
 <div class="fig figcenter fighighlight">
   <img src="/images/splash.JPG" width="100%">
   <div class="figcaption">
