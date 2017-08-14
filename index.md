@@ -12,7 +12,7 @@ Deep Learning is an emerging field of research and Transfer Learning is one of i
 
 According to [Pan, et al](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf), “research on transfer learning has attracted more and more attention since 1995 in different names: learning to learn, life-long learning, knowledge transfer, inductive transfer, multi-task learning, knowledge consolidation, context sensitive learning, knowledge-based inductive bias, meta learning, and incremental/cumulative learning”. They describe the difference between the learning processes of traditional and transfer learning techniques in the figure below.
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Traditional%20vs.%20Transfer%20Learning.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Traditional%20vs.%20Transfer%20Learning.PNG"> 
 
 Figure 1: Different learning processes between traditional machine learning and Transfer Learning [Pan, et al](https://www.cse.ust.hk/~qyang/Docs/2009/tkde_transfer_learning.pdf)
 
@@ -20,7 +20,7 @@ Figure 1: Different learning processes between traditional machine learning and 
 A classic demonstration of Transfer Learning is in image classification using [Kaggle’s](https://www.kaggle.com/datasets) Dogs versus Cats dataset. Using 1000 cats and 1000 dogs from this dataset of 12,500 cats and 12,500 dogs, a [three-layer ConvNet](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) model has been shown to be capable of achieving [79-81%](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) accuracy after 50 epochs. With a pre-trained [ImageNet VGG16 model](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html), the accuracy improves to [90-91%](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html). Finally, with fine-tuning, the accuracy improves further to [94%](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html). The VGG architecture is shown in the figure below.
 
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%202%20-%20VGG16%20Architecture.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Figure%202%20-%20VGG16%20Architecture.PNG">
 
 Figure 2: [VGG16/VGG19 Architecture](https://blog.heuritech.com/2016/02/29/a-brief-report-of-the-heuritech-deep-learning-meetup-5)
 
@@ -69,33 +69,33 @@ The purpose behind performing a quick checkout on the ImageNet pre-trained model
 3. **New dataset is small but very different from the original dataset**: Since the data is small, it is likely best to only train a linear classifier. Since the dataset is very different, it might not be best to train the classifier form the top of the network, which contains more dataset-specific features. Instead, it might work better to train the Support Vector Machine (SVM) classifier from activations somewhere earlier in the network.
 4. **New dataset is large and very different from the original dataset**: Since the dataset is very large, it would be expected to train a ConvNet from scratch. However, in practice it is very often still beneficial to initialize with weights from a pretrained model. In this case, there would be enough data and confidence to fine-tune through the entire network.
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles%20-%20Initial%20Checkout.PNG"> 
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Noodles_Initial_Checkout_Results.PNG"> 
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves%20-%20Initial%20Checkout.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Leaves_Initial_Checkout_Results.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs%20-%20Initial%20Checkout.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Dogs_Initial_Checkout_Results.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01%20-%20Initial%20Checkout.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01%20-%20Initial%20Checkout.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_01_Initial_Checkout_Results.PNG"> 
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02%20-%20Initial%20Checkout.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02%20-%20Initial%20Checkout.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Birds_02_Initial_Checkout_Results.PNG"> 
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01%20-%20Initial%20Checkout.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01%20-%20Initial%20Checkout.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_01_Initial_Checkout_Results.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02%20-%20Initial%20Checkout.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02%20-%20Initial%20Checkout.PNG">
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02_Initial_Checkout_Results.PNG"></a> 
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Butterflies_02_Initial_Checkout_Results.PNG">
 
 ### Summary of Quick Checkout on ImageNet pre-trained Models
 **Noodles**: Except for VGG19's top prediction being a "Plate" when attempting to recognize Fried Noodles sample image, it next best prediction was "Carbonara" which lined up well with the rest of the models.
@@ -227,7 +227,7 @@ horizontal_flip is for randomly flipping half of the images horizontally, releva
 
 The figure below displays the effect of applying rotation, width and height shifts, shear, zoom , fill mode and horizontal flip on a random butterfly image:
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Image%20Augmentation.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Image%20Augmentation.PNG">
 
 The images used in the datasets underwent the following data augmentation when using VGG16 and VGG19 models. The InceptionV3 and Xception models have a built-in preprocessing function and do not need the rescaling feature.
 
@@ -295,9 +295,9 @@ for layer in vgg19_model.layers:
 ```
 ### Learning Process Animation
 * * *
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt2.gif" align="left" height="280" width="360" >
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt2.gif" align="left" height="280" width="360">
 
-</a> <a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" align="right" height="360" width="480" ></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/opt1.gif" align="right" height="360" width="480">
 
 Animations that may help your intuitions about the learning process dynamics. Left: Contours of a loss surface and time evolution of different optimization algorithms. Notice the "overshooting" behavior of momentum-based methods, which make the optimization look like a ball rolling down the hill. Right: A visualization of a saddle point in the optimization landscape, where the curvature along different dimension has different signs (one dimension curves up and another down). Notice that SGD has a very hard time breaking symmetry and gets stuck on the top. Conversely, algorithms such as RMSprop will see very low gradients in the saddle direction. Due to the denominator term in the RMSprop update, this will increase the effective learning rate along this direction, helping RMSProp proceed. [Source: CS231n](http://cs231n.github.io/neural-networks-3/#ada). Images credit: [Alec Radford](https://twitter.com/alecrad).
 * * *
@@ -431,7 +431,7 @@ plt.ylim(0,max(y1))
 plt.show()
 ```
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20TL%20Plot.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20TL%20Plot.PNG">
 
 ### Predict Unseen Images
 The model.predict function generates output predictions for the input images which are retrieved from the dataset's test folder.
@@ -464,7 +464,7 @@ classes = {value : key for key, value in classes.items()}
 final["Butterfly"] = final["Butterfly"].apply(lambda x: classes[x])
 final.head(num_images)
 ```
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20TL%20Results.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Prediction%20TL%20Results.PNG">
 
 ### Save the Prediction Results
 ```
@@ -591,7 +591,7 @@ plt.ylabel('Loss')
 plt.ylim(0,2)
 plt.show()
 ```
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20FT%20Plot.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Sample%20FT%20Plot.PNG">
 
 ### Predict Unseen Images
 The model.predict function generates output predictions for the input images which are retrieved from the dataset's test folder.
@@ -721,7 +721,7 @@ Epoch 5/5
 ## Summary of Test Results
 The table below shows the the test accuracies, training times and the dataset image sizes for all the datasets used in this project. The highlighted cells indicate no improvement or there was a loss in test accuracy from Transfer Learning to Fine Tuning.
 
-<a href="url"><img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Test%20Results.PNG"></a>
+<img src="https://github.com/hbhasin/Image-Recognition-with-Deep-Learning/blob/master/images/Test%20Results.PNG">
 
 ### Transfer Learning
 **Noodles Dataset**: All four models achieved greater than 85% test accuracy with the Xception model performing the best at 100%.
