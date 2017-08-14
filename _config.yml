@@ -2,4 +2,4 @@
 baseurl: "github.com/hbhasin/Image-Recognition-with-Deep-Learning"
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-theme-tactile
