@@ -4,3 +4,5 @@ baseurl: "github.com/hbhasin/Image-Recognition-with-Deep-Learning"
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+theme: jekyll-theme-cayman
