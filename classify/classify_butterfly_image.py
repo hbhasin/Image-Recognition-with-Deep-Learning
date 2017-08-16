@@ -1,3 +1,5 @@
+# Adapted from pyimagesearch.com
+# http://www.pyimagesearch.com/2017/03/20/imagenet-vggnet-resnet-inception-xception-keras/
 # USAGE
 # python classify_butterfly_image.py --image images/butterfly.jpg --model inception
 # download models from https://drive.google.com/drive/folders/0B5V_P8iI1LUeMzBTQzlWLTZwVTg
